@@ -1,0 +1,27 @@
+{
+    "manifest_version" : 2,
+    "name" : "UMD Rate My Professor Extension",
+    "version" : "0.1",
+    "description" : "Displays and links Professor ratings from Rate My Professor on UMD's Schedule of Classes",
+    "permissions" : [
+        "activeTab",
+        "https://www.ratemyprofessors.com/*",
+        "storage"
+    ],
+    "content_scripts" : [
+        {
+            "matches" : ["https://apps-banner-xe6-prod.its.umd.umich.edu/StudentRegistrationSsb/ssb/classSearch/classSearch"],
+            "js" : ["content.js"]
+        }
+    ],
+    "icons" : {
+        "16": "icons/PlaceholderIcon_16x16.jpg",
+        "32": "icons/PlaceholderIcon_32x32.jpg",
+        "64": "icons/PlaceholderIcon_64x64.jpg",
+    },
+    "browser_action" : {
+        "default_icon" : "icons/PlaceholderIcon_32x32.jpg",
+        "default_popup" : "popup.html",
+        "default_title" : "UMD Rate My Professor Extension"
+    }
+}
