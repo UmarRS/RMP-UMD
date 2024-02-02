@@ -17,7 +17,7 @@
     "icons" : {
         "16": "icons/PlaceholderIcon_16x16.jpg",
         "32": "icons/PlaceholderIcon_32x32.jpg",
-        "64": "icons/PlaceholderIcon_64x64.jpg",
+        "64": "icons/PlaceholderIcon_64x64.jpg"
     },
     "browser_action" : {
         "default_icon" : "icons/PlaceholderIcon_32x32.jpg",
