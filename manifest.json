@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Greet Professors",
+    "version": "1.0",
+    "description": "Append 'Hi' next to the professor's name.",
+    "permissions": ["scripting"],
+    "host_permissions": [
+      "https://apps-banner-xe6-prod.its.umd.umich.edu:7005/StudentRegistrationSsb/ssb/classSearch/classSearch*"
+    ],
+   
+    "content_scripts": [
+      {
+        "matches": ["https://apps-banner-xe6-prod.its.umd.umich.edu:7005/StudentRegistrationSsb/ssb/classSearch/classSearch*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
