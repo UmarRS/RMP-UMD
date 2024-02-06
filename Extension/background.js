@@ -1,5 +1,4 @@
 const rmpDatabase = [
-    [
         {
           "name": "Raymond Duda",
           "rating": "1.9",
@@ -7248,18 +7247,13 @@ const rmpDatabase = [
           "takeAgainPercentage": "N/A",
           "mostRecentReview": ""
         }
-      ]
 ];
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "getProfessorInfo") {
       
-        sendResponse({status: "success", data: {name: "Test Professor", rating: "N/A"}}); // test response
-    }
-});
-
 // Code below is for searching, however with the integrated database, it takes too long to respond and it times out. Currently working to find a faster method.
-      /*
+      
         // Normalize the request name to lower case for case-insensitive comparison
       const normalizedRequestName = request.name.toLowerCase();
   
@@ -7277,5 +7271,5 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         }
         return true; // Indicates an asynchronous response
   }); 
-  */
+  
   
