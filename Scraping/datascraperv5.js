@@ -47,10 +47,20 @@ const scrapeProfessorInfo = async (urls) => {
   console.log('All data has been written to file successfully.');
 };
 
-// Array to add URLs for specific professors
-const professorPageUrls = [
-  'https://www.ratemyprofessors.com/professor/2852967', // Example professor
-  'https://www.ratemyprofessors.com/professor/1853309'
-];
+// Reading URLs from the file
+const readUrlsFromFile = (filePath) => {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filePath, { encoding: 'utf8' }, (err, data) => {
+      if (err) reject(err);
+      else resolve(data.split('\n').filter(Boolean)); // Split by new line and filter out any empty lines
+    });
+  });
+};
 
-scrapeProfessorInfo(professorPageUrls);
+// Example usage
+const filePath = path.join(__dirname, 'professorUrls.txt'); // Path to your URLs file
+readUrlsFromFile(filePath)
+  .then(professorPageUrls => {
+    scrapeProfessorInfo(professorPageUrls);
+  })
+  .catch(error => console.error('Failed to read URLs from file:', error));
