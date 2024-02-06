@@ -1,27 +1,19 @@
 {
     "manifest_version": 3,
-    "name": "Rate My Professor Extension Prototype",
-    "version": "0.1",
-    "description": "Append an icon next to the professor's name, which pops up a tab with their rate my professor info",
+    "name": "Greet Professors",
+    "version": "1.0",
+    "description": "Append 'Hi' next to the professor's name.",
     "permissions": ["scripting"],
     "host_permissions": [
       "https://apps-banner-xe6-prod.its.umd.umich.edu:7005/StudentRegistrationSsb/ssb/*"
     ],
-    "background": {
-      "service_worker": "background.js"
-    },
+   
     "content_scripts": [
       {
         "matches": ["https://apps-banner-xe6-prod.its.umd.umich.edu:7005/StudentRegistrationSsb/ssb/*"],
         "js": ["content.js"]
       }
     ],
-    "web_accessible_resources": [
-      {
-        "resources": ["Icons/Icon16x.jpg"],
-        "matches": ["<all_urls>"]
-      }
-    ],    
     "action": {
       "default_popup": "popup.html"
     }
