@@ -5888,7 +5888,7 @@ const rmpDatabase = [
           "mostRecentReview": "Good professor"
         },
         {
-          "name": "Robert Mann",
+          "name": "Robert Mann II",
           "rating": "4.4",
           "numberOfRatings": "48",
           "difficultyLevel": "3.9",

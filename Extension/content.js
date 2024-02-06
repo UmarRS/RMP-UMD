@@ -12,7 +12,7 @@ function insertRateMyProfessorIcon() {
   instructorElements.forEach((element) => {
     if (!element.classList.contains("rmp-icon-added")) {
       const iconElement = document.createElement("img");
-      const iconPath = chrome.runtime.getURL("Icons/Icon16x.jpg");
+      const iconPath = chrome.runtime.getURL("Icons/um16xtest.png");
       iconElement.setAttribute("src", iconPath); // Set the path to your icon image
       iconElement.setAttribute("style", "cursor:pointer; margin-right:5px;");
       iconElement.classList.add("rmp-icon");
@@ -51,34 +51,187 @@ function openRmpPopup(professorName) {
         return; // Exit the function to avoid further processing
       }
 
-      // Assuming no error, proceed to process the response
-      if (response.status === "success") {
-        displayRmpDataPopup(response.data);
-      } else {
-        console.error("Failed to fetch RMP data:", response.message);
-        // Here, you might also want to inform the user that the data couldn't be fetched
-      }
+    // Assuming no error, proceed to process the response
+    if (response.status === "success") {
+      displayRmpDataPopup(response.data);
+    } else {
+      console.error("Failed to fetch RMP data:", response.message);
+
+      displayErrorPopup("Professor not found/No data available.");
     }
-  );
+  });
 }
 
-// Displays the RMP data in a popup
-function displayRmpDataPopup(data) {
+// Displays an error message in a popup for when professor data is not found
+function displayErrorPopup(message) {
+  
+  // Create a div for the popup
   const popup = document.createElement("div");
-  popup.setAttribute(
-    "style",
-    "position:fixed; top:20%; left:50%; transform:translate(-50%, -50%); background-color:white; padding:20px; border-radius:10px; z-index:1000; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-  );
-  popup.innerHTML = `
-    <h2>${data.name}</h2>
-    <p>Rating: ${data.rating}</p>
-    <p>Number of Ratings: ${data.numberOfRatings}</p>
-    <p>Difficulty Level: ${data.difficultyLevel}</p>
-    <p>Would Take Again: ${data.takeAgainPercentage}</p>
-    <p>Most Recent Review: ${data.mostRecentReview}</p>
-    <button onclick="this.parentElement.remove()">Close</button>
-  `;
+  popup.setAttribute("style", `
+    position: fixed;
+    top:50%;
+    left:40%;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  `);
+
+  // Create a message element
+  const messageElement = document.createElement("p");
+  messageElement.textContent = message;
+
+  // Append the message and close button to the popup
+  popup.appendChild(messageElement);
+
+  // Append the popup to the body
   document.body.appendChild(popup);
+
+  // Function to update the popup position based on mouse coordinates
+  function updatePopupPosition(event) {
+    const xOffset = 20; // Adjust the horizontal offset
+    const yOffset = 20; // Adjust the vertical offset
+    popup.style.left = `${event.clientX + xOffset}px`;
+    popup.style.top = `${event.clientY + yOffset}px`;
+  }
+
+  // Attach event listener for mousemove to update popup position
+  document.addEventListener("mousemove", updatePopupPosition);
+
+  // Automatically close the popup after 3 seconds
+  setTimeout(() => {
+    document.body.removeChild(popup);
+    // Remove the mousemove event listener when the popup is closed
+    document.removeEventListener("mousemove", updatePopupPosition);
+  }, 3000);
+
+  // Trigger the initial position update to prevent a jump
+  updatePopupPosition(event);
+}
+
+
+// Displays the RMP data in a popup
+
+function displayRmpDataPopup(data) {
+  const iconElement = document.createElement("img");
+  const iconPath = chrome.runtime.getURL("Icons/umdlogo.png");
+  iconElement.setAttribute("src", iconPath);
+
+  const popup = document.createElement('div');
+  popup.style.position = "fixed";
+  popup.style.top = "30%";
+  popup.style.left = "50%";
+  popup.style.fontFamily = "Helvetica, sans-serif";
+  popup.style.fontSize = "14px";
+  popup.style.color = "#FFCB05";
+  popup.style.borderRadius = "25px";
+  popup.style.zIndex = "1000";
+  popup.style.boxShadow = "0 4px 8px rgba(0,0,0,0.5)";
+  popup.style.border = "1px solid #898989";
+  popup.style.backgroundColor = "#00274C";
+  popup.style.opacity = "0"; // Initially set opacity to 0
+  popup.style.width = "400px";
+  popup.style.padding = "20px";
+  popup.style.transition = "opacity 0.4s ease-in-out"; // Add transition for opacity
+
+  let isDragging = false;
+  let offsetX, offsetY;
+
+  popup.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    offsetX = e.clientX - popup.getBoundingClientRect().left;
+    offsetY = e.clientY - popup.getBoundingClientRect().top;
+    popup.style.zIndex = "1001"; // Bring the popup to the front while dragging
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    if (isDragging) {
+      const newX = e.clientX - offsetX;
+      const newY = e.clientY - offsetY;
+
+      popup.style.left = newX + "px";
+      popup.style.top = newY + "px";
+    }
+  });
+
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+    popup.style.zIndex = "1000"; // Return the popup to its original z-index
+  });
+
+  const buttonStyle = `
+    background-color: #00274C;
+    color: #FFCB05;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    margin: 10px auto 0;
+    width: auto;
+  `;
+
+  popup.innerHTML = `
+    <h2 style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <span>${data.name}</span>
+      <div style="display: flex; align-items: center;">
+        <img src="${iconPath}" alt="Logo" style="width: 50px; height: 50px; margin-right: 20px;">
+      <span style="margin-left: auto;">Rate My Professor</span>
+    </h2>
+    <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
+      <p><strong style="color: #FFCB05;">Rating:</strong> <span class="data-element">${data.rating}/5</span></p>
+    </div>
+    <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
+      <p><strong style="color: #FFCB05;">Number of Ratings:</strong> <span class="data-element">${data.numberOfRatings}</span></p>
+    </div>
+    <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
+      <p><strong style="color: #FFCB05;">Difficulty Level:</strong> <span class="data-element">${data.difficultyLevel}/5</span></p>
+    </div>
+    <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
+      <p><strong style="color: #FFCB05;">Would Take Again:</strong> <span class="data-element">${data.takeAgainPercentage}</span></p>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <p><strong style="color: #FFCB05;">Most Recent Review:</strong> <span class="data-element">${data.mostRecentReview}</span></p>
+    </div>
+  `;
+
+  // Define styles for the custom class "data-element"
+  const dataElementStyle = `
+    color: #EFF0F1; // White color for data elements
+  `;
+
+  // Apply the custom class style to all elements with class "data-element"
+  const dataElements = popup.querySelectorAll('.data-element');
+  dataElements.forEach(element => {
+    element.style.cssText = dataElementStyle;
+  });
+
+  const closeButton = document.createElement('button');
+  closeButton.style.cssText = buttonStyle;
+  closeButton.textContent = 'Close';
+  closeButton.onclick = () => {
+    popup.style.opacity = '0'; // Start fading out
+    setTimeout(() => {
+      popup.remove(); // Remove the popup after the fade-out animation
+    }, 300); // Adjust the duration as needed
+  };
+
+  popup.appendChild(closeButton);
+
+  document.body.appendChild(popup);
+
+  // Use a setTimeout to trigger the fade-in effect
+  setTimeout(() => {
+    popup.style.opacity = "1";
+  }, 10);
 }
 
 // Use a MutationObserver to wait for the elements to be available and insert the icon

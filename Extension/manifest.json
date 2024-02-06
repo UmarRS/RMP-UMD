@@ -18,12 +18,17 @@
     ],
     "web_accessible_resources": [
       {
-        "resources": ["Icons/Icon16x.jpg"],
+        "resources": ["Icons/*"],
         "matches": ["<all_urls>"]
       }
     ],    
     "action": {
       "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "Icons/um16xtest.png",
+      "48": "Icons/um48x.png",
+      "128": "Icons/um128x.png"
     }
   }
   
