@@ -1,3 +1,5 @@
+let activePopupsCount = 0; // Global variable to track active popups
+
 // Inserts an icon next to the professor's name and adds a click event listener for fetching RMP info
 function insertRateMyProfessorIcon() {
   const instructorElements = document.querySelectorAll(
@@ -51,23 +53,25 @@ function openRmpPopup(professorName) {
         return; // Exit the function to avoid further processing
       }
 
-    // Assuming no error, proceed to process the response
-    if (response.status === "success") {
-      displayRmpDataPopup(response.data);
-    } else {
-      console.error("Failed to fetch RMP data:", response.message);
+      // Assuming no error, proceed to process the response
+      if (response.status === "success") {
+        displayRmpDataPopup(response.data);
+      } else {
+        console.error("Failed to fetch RMP data:", response.message);
 
-      displayErrorPopup("Professor not found/No data available.");
+        displayErrorPopup("Professor not found/No data available.");
+      }
     }
-  });
+  );
 }
 
 // Displays an error message in a popup for when professor data is not found
 function displayErrorPopup(message) {
-  
   // Create a div for the popup
   const popup = document.createElement("div");
-  popup.setAttribute("style", `
+  popup.setAttribute(
+    "style",
+    `
     position: fixed;
     top:50%;
     left:40%;
@@ -78,7 +82,8 @@ function displayErrorPopup(message) {
     border-radius: 10px;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  `);
+  `
+  );
 
   // Create a message element
   const messageElement = document.createElement("p");
@@ -112,7 +117,6 @@ function displayErrorPopup(message) {
   updatePopupPosition(event);
 }
 
-
 // Displays the RMP data in a popup
 
 function displayRmpDataPopup(data) {
@@ -120,7 +124,7 @@ function displayRmpDataPopup(data) {
   const iconPath = chrome.runtime.getURL("Icons/umdlogo.png");
   iconElement.setAttribute("src", iconPath);
 
-  const popup = document.createElement('div');
+  const popup = document.createElement("div");
   popup.style.position = "fixed";
   popup.style.top = "30%";
   popup.style.left = "50%";
@@ -136,6 +140,13 @@ function displayRmpDataPopup(data) {
   popup.style.width = "400px";
   popup.style.padding = "20px";
   popup.style.transition = "opacity 0.4s ease-in-out"; // Add transition for opacity
+  const xOffset = 20 * activePopupsCount; // Adjust these values as needed
+  const yOffset = 20 * activePopupsCount;
+  popup.style.left = `calc(50% + ${xOffset}px)`;
+  popup.style.top = `calc(30% + ${yOffset}px)`;
+
+  // Increment activePopupsCount
+  activePopupsCount++;
 
   let isDragging = false;
   let offsetX, offsetY;
@@ -209,18 +220,21 @@ function displayRmpDataPopup(data) {
   `;
 
   // Apply the custom class style to all elements with class "data-element"
-  const dataElements = popup.querySelectorAll('.data-element');
-  dataElements.forEach(element => {
+  const dataElements = popup.querySelectorAll(".data-element");
+  dataElements.forEach((element) => {
     element.style.cssText = dataElementStyle;
   });
 
-  const closeButton = document.createElement('button');
+  const closeButton = document.createElement("button");
   closeButton.style.cssText = buttonStyle;
-  closeButton.textContent = 'Close';
+  closeButton.textContent = "Close";
+
   closeButton.onclick = () => {
-    popup.style.opacity = '0'; // Start fading out
+    popup.style.opacity = "0"; // Start fading out
     setTimeout(() => {
       popup.remove(); // Remove the popup after the fade-out animation
+      // Decrement activePopupsCount
+      activePopupsCount--;
     }, 300); // Adjust the duration as needed
   };
 
