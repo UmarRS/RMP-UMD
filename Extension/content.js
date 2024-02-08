@@ -119,17 +119,24 @@ function displayErrorPopup(message) {
 
 // Function to interpolate between two red and green based on rating and difficulty level
 function getColorForValue(value, isForRating = true) {
-  // value is expected to be between 0 and 5
   const max = 5;
-  const factor = value / max;
+  const factor = value / max; // Normalize value to [0, 1]
 
-  const enhancedFactor = 1 / (1 + Math.exp(-10 * (factor - 0.5)));
+  // Direct linear interpolation for red and green components
+  let red, green;
+  if (isForRating) {
+    // For rating: Green increases with value, Red decreases
+    green = Math.round(255 * factor);
+    red = 255 - green;
+  } else {
+    // For difficulty: Red increases with value, Green decreases
+    red = Math.round(255 * factor);
+    green = 255 - red;
+  }
 
-  // Calculate red or green intensity based on the value
-  const red = isForRating ? Math.round(255 * (1 - enhancedFactor)) : Math.round(255 * enhancedFactor);
-  const green = isForRating ? Math.round(255 * enhancedFactor) : Math.round(255 * (1 - enhancedFactor));
-  return `rgb(${red},${green},0)`; // Return an RGB color string
+  return `rgb(${red},${green},0)`;
 }
+
 
 
 // Displays the RMP data in a popup
