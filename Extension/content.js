@@ -117,8 +117,22 @@ function displayErrorPopup(message) {
   updatePopupPosition(event);
 }
 
-// Displays the RMP data in a popup
+// Function to interpolate between two red and green based on rating and difficulty level
+function getColorForValue(value, isForRating = true) {
+  // value is expected to be between 0 and 5
+  const max = 5;
+  const factor = value / max;
 
+  const enhancedFactor = 1 / (1 + Math.exp(-10 * (factor - 0.5)));
+
+  // Calculate red or green intensity based on the value
+  const red = isForRating ? Math.round(255 * (1 - enhancedFactor)) : Math.round(255 * enhancedFactor);
+  const green = isForRating ? Math.round(255 * enhancedFactor) : Math.round(255 * (1 - enhancedFactor));
+  return `rgb(${red},${green},0)`; // Return an RGB color string
+}
+
+
+// Displays the RMP data in a popup
 function displayRmpDataPopup(data) {
   const iconElement = document.createElement("img");
   const iconPath = chrome.runtime.getURL("Icons/umdlogo.png");
@@ -139,7 +153,8 @@ function displayRmpDataPopup(data) {
   popup.style.opacity = "0"; // Initially set opacity to 0
   popup.style.width = "400px";
   popup.style.padding = "20px";
-  popup.style.transition = "opacity 0.4s ease-in-out"; // Add transition for opacity
+  popup.style.transition = "opacity 0.4s ease-in-out, transform 0.4s ease-in-out"; // Add transition for opacity, small-to-big.
+  popup.style.transform = "scale(0.5)"; // Initially set scale to 0.5
   const xOffset = 20 * activePopupsCount; // Adjust these values as needed
   const yOffset = 20 * activePopupsCount;
   popup.style.left = `calc(50% + ${xOffset}px)`;
@@ -198,32 +213,21 @@ function displayRmpDataPopup(data) {
       <span style="margin-left: auto;">Rate My Professor</span>
     </h2>
     <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
-      <p><strong style="color: #FFCB05;">Rating:</strong> <span class="data-element">${data.rating}/5</span></p>
+      <p><strong style="color: #FFCB05;">Rating:</strong> <span class="data-element" style="color: ${getColorForValue(data.rating, true)};">${data.rating}/5</span></p>
     </div>
     <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
-      <p><strong style="color: #FFCB05;">Number of Ratings:</strong> <span class="data-element">${data.numberOfRatings}</span></p>
+      <p><strong style="color: #FFCB05;">Number of Ratings:</strong> <span class="data-element" style="color: #EFF0F1;">${data.numberOfRatings}</span></p>
     </div>
     <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
-      <p><strong style="color: #FFCB05;">Difficulty Level:</strong> <span class="data-element">${data.difficultyLevel}/5</span></p>
+      <p><strong style="color: #FFCB05;">Difficulty Level:</strong> <span class="data-element" style="color: ${getColorForValue(data.difficultyLevel, false)};">${data.difficultyLevel}/5</span></p>
     </div>
     <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
-      <p><strong style="color: #FFCB05;">Would Take Again:</strong> <span class="data-element">${data.takeAgainPercentage}</span></p>
+      <p><strong style="color: #FFCB05;">Would Take Again:</strong> <span class="data-element" style="color: #EFF0F1;">${data.takeAgainPercentage}</span></p>
     </div>
     <div style="margin-bottom: 20px;">
-      <p><strong style="color: #FFCB05;">Most Recent Review:</strong> <span class="data-element">${data.mostRecentReview}</span></p>
+      <p><strong style="color: #FFCB05;">Most Recent Review:</strong> <span class="data-element" style="color: #EFF0F1;">${data.mostRecentReview}</span></p>
     </div>
   `;
-
-  // Define styles for the custom class "data-element"
-  const dataElementStyle = `
-    color: #EFF0F1; // White color for data elements
-  `;
-
-  // Apply the custom class style to all elements with class "data-element"
-  const dataElements = popup.querySelectorAll(".data-element");
-  dataElements.forEach((element) => {
-    element.style.cssText = dataElementStyle;
-  });
 
   const closeButton = document.createElement("button");
   closeButton.style.cssText = buttonStyle;
@@ -231,6 +235,7 @@ function displayRmpDataPopup(data) {
 
   closeButton.onclick = () => {
     popup.style.opacity = "0"; // Start fading out
+    popup.style.transform = "scale(0.5)"; // Start scaling down
     setTimeout(() => {
       popup.remove(); // Remove the popup after the fade-out animation
       // Decrement activePopupsCount
@@ -245,6 +250,7 @@ function displayRmpDataPopup(data) {
   // Use a setTimeout to trigger the fade-in effect
   setTimeout(() => {
     popup.style.opacity = "1";
+    popup.style.transform = "scale(1)";
   }, 10);
 }
 
