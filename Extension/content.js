@@ -24,13 +24,14 @@ function insertRateMyProfessorIcon() {
 
       // Add click event listener to the icon
       iconElement.addEventListener("click", function () {
-        let professorName = element.textContent.trim(); // Get the professor's name
-        professorName = professorName.split(", ").reverse().join(" "); // Reformatted: "Patricia Graybeal"
-
-        openRmpPopup(professorName); // Fetch and display RMP info
+        // Get the professor's name
+        let professorName = element.textContent.trim();
+        professorName = professorName.split(", ").reverse().join(" ");
+        // Fetch and display RMP info
+        openRmpPopup(professorName);
       });
-
-      element.classList.add("rmp-icon-added"); // Mark as processed
+      // Mark as processed
+      element.classList.add("rmp-icon-added");
     }
   });
 
@@ -137,8 +138,6 @@ function getColorForValue(value, isForRating = true) {
   return `rgb(${red},${green},0)`;
 }
 
-
-
 // Displays the RMP data in a popup
 function displayRmpDataPopup(data) {
   const iconElement = document.createElement("img");
@@ -160,7 +159,8 @@ function displayRmpDataPopup(data) {
   popup.style.opacity = "0"; // Initially set opacity to 0
   popup.style.width = "400px";
   popup.style.padding = "20px";
-  popup.style.transition = "opacity 0.4s ease-in-out, transform 0.4s ease-in-out"; // Add transition for opacity, small-to-big.
+  popup.style.transition =
+    "opacity 0.4s ease-in-out, transform 0.4s ease-in-out"; // Add transition for opacity, small-to-big.
   popup.style.transform = "scale(0.5)"; // Initially set scale to 0.5
   const xOffset = 20 * activePopupsCount; // Adjust these values as needed
   const yOffset = 20 * activePopupsCount;
@@ -220,19 +220,31 @@ function displayRmpDataPopup(data) {
       <span style="margin-left: auto;">Rate My Professor</span>
     </h2>
     <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
-      <p><strong style="color: #FFCB05;">Rating:</strong> <span class="data-element" style="color: ${getColorForValue(data.rating, true)};">${data.rating}/5</span></p>
+      <p><strong style="color: #FFCB05;">Rating:</strong> <span class="data-element" style="color: ${getColorForValue(
+        data.rating,
+        true
+      )};">${data.rating}/5</span></p>
     </div>
     <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
-      <p><strong style="color: #FFCB05;">Number of Ratings:</strong> <span class="data-element" style="color: #EFF0F1;">${data.numberOfRatings}</span></p>
+      <p><strong style="color: #FFCB05;">Number of Ratings:</strong> <span class="data-element" style="color: #EFF0F1;">${
+        data.numberOfRatings
+      }</span></p>
     </div>
     <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
-      <p><strong style="color: #FFCB05;">Difficulty Level:</strong> <span class="data-element" style="color: ${getColorForValue(data.difficultyLevel, false)};">${data.difficultyLevel}/5</span></p>
+      <p><strong style="color: #FFCB05;">Difficulty Level:</strong> <span class="data-element" style="color: ${getColorForValue(
+        data.difficultyLevel,
+        false
+      )};">${data.difficultyLevel}/5</span></p>
     </div>
     <div style="margin-bottom: 10px; border-bottom: 1px solid white;">
-      <p><strong style="color: #FFCB05;">Would Take Again:</strong> <span class="data-element" style="color: #EFF0F1;">${data.takeAgainPercentage}</span></p>
+      <p><strong style="color: #FFCB05;">Would Take Again:</strong> <span class="data-element" style="color: #EFF0F1;">${
+        data.takeAgainPercentage
+      }</span></p>
     </div>
     <div style="margin-bottom: 20px;">
-      <p><strong style="color: #FFCB05;">Most Recent Review:</strong> <span class="data-element" style="color: #EFF0F1;">${data.mostRecentReview}</span></p>
+      <p><strong style="color: #FFCB05;">Most Recent Review:</strong> <span class="data-element" style="color: #EFF0F1;">${
+        data.mostRecentReview
+      }</span></p>
     </div>
   `;
 
