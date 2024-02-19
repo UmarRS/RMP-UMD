@@ -1,5 +1,5 @@
 {
-    "manifest_version": 1,
+    "manifest_version": 3,
     "name": "Rate My Professor Extension Prototype",
     "version": "1.0",
     "description": "Append an icon next to the professor's name, which pops up a tab with their rate my professor info",
