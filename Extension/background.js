@@ -8045,7 +8045,6 @@ const rmpDatabase = [
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "getProfessorInfo") {
-    // Search methods
 
     // Normalize the request name to lower case for case-insensitive comparison
     const normalizedRequestName = request.name.toLowerCase();
@@ -8063,6 +8062,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   } else {
     sendResponse({ status: "error", message: "Invalid action" });
   }
-  // Indicates an asynchronous response
+  // asynchronous response
   return true;
 });

@@ -15,7 +15,7 @@ function insertRateMyProfessorIcon() {
     if (!element.classList.contains("rmp-icon-added")) {
       const iconElement = document.createElement("img");
       const iconPath = chrome.runtime.getURL("Icons/um16xtest.png");
-      iconElement.setAttribute("src", iconPath); // Set the path to your icon image
+      iconElement.setAttribute("src", iconPath);
       iconElement.setAttribute("style", "cursor:pointer; margin-right:5px;");
       iconElement.classList.add("rmp-icon");
 
@@ -45,13 +45,11 @@ function openRmpPopup(professorName) {
     (response) => {
       // Check for an error from the message passing
       if (chrome.runtime.lastError) {
-        // Log the error or handle it as needed
         console.error(
           "Error fetching professor info:",
           chrome.runtime.lastError.message
         );
-        // Optionally, you can still attempt to display some form of error message to the user here
-        return; // Exit the function to avoid further processing
+        return;
       }
 
       // Assuming no error, proceed to process the response
@@ -68,7 +66,6 @@ function openRmpPopup(professorName) {
 
 // Displays an error message in a popup for when professor data is not found
 function displayErrorPopup(message) {
-  // Create a div for the popup
   const popup = document.createElement("div");
   popup.setAttribute(
     "style",
@@ -86,14 +83,11 @@ function displayErrorPopup(message) {
   `
   );
 
-  // Create a message element
   const messageElement = document.createElement("p");
   messageElement.textContent = message;
 
-  // Append the message and close button to the popup
   popup.appendChild(messageElement);
 
-  // Append the popup to the body
   document.body.appendChild(popup);
 
   // Function to update the popup position based on mouse coordinates
@@ -110,11 +104,9 @@ function displayErrorPopup(message) {
   // Automatically close the popup after 3 seconds
   setTimeout(() => {
     document.body.removeChild(popup);
-    // Remove the mousemove event listener when the popup is closed
     document.removeEventListener("mousemove", updatePopupPosition);
   }, 3000);
 
-  // Trigger the initial position update to prevent a jump
   updatePopupPosition(event);
 }
 
@@ -156,18 +148,17 @@ function displayRmpDataPopup(data) {
   popup.style.boxShadow = "0 4px 8px rgba(0,0,0,0.5)";
   popup.style.border = "1px solid #898989";
   popup.style.backgroundColor = "#00274C";
-  popup.style.opacity = "0"; // Initially set opacity to 0
+  popup.style.opacity = "0";
   popup.style.width = "400px";
   popup.style.padding = "20px";
   popup.style.transition =
     "opacity 0.4s ease-in-out, transform 0.4s ease-in-out"; // Add transition for opacity, small-to-big.
-  popup.style.transform = "scale(0.5)"; // Initially set scale to 0.5
-  const xOffset = 20 * activePopupsCount; // Adjust these values as needed
+  popup.style.transform = "scale(0.5)";
+  const xOffset = 20 * activePopupsCount;
   const yOffset = 20 * activePopupsCount;
   popup.style.left = `calc(50% + ${xOffset}px)`;
   popup.style.top = `calc(30% + ${yOffset}px)`;
 
-  // Increment activePopupsCount
   activePopupsCount++;
 
   let isDragging = false;
@@ -177,7 +168,7 @@ function displayRmpDataPopup(data) {
     isDragging = true;
     offsetX = e.clientX - popup.getBoundingClientRect().left;
     offsetY = e.clientY - popup.getBoundingClientRect().top;
-    popup.style.zIndex = "1001"; // Bring the popup to the front while dragging
+    popup.style.zIndex = "1001";
   });
 
   document.addEventListener("mousemove", (e) => {
@@ -192,7 +183,7 @@ function displayRmpDataPopup(data) {
 
   document.addEventListener("mouseup", () => {
     isDragging = false;
-    popup.style.zIndex = "1000"; // Return the popup to its original z-index
+    popup.style.zIndex = "1000";
   });
 
   const buttonStyle = `
@@ -253,20 +244,18 @@ function displayRmpDataPopup(data) {
   closeButton.textContent = "Close";
 
   closeButton.onclick = () => {
-    popup.style.opacity = "0"; // Start fading out
-    popup.style.transform = "scale(0.5)"; // Start scaling down
+    popup.style.opacity = "0";
+    popup.style.transform = "scale(0.5)";
     setTimeout(() => {
-      popup.remove(); // Remove the popup after the fade-out animation
-      // Decrement activePopupsCount
+      popup.remove();
       activePopupsCount--;
-    }, 300); // Adjust the duration as needed
+    }, 300);
   };
 
   popup.appendChild(closeButton);
 
   document.body.appendChild(popup);
 
-  // Use a setTimeout to trigger the fade-in effect
   setTimeout(() => {
     popup.style.opacity = "1";
     popup.style.transform = "scale(1)";
