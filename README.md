@@ -30,4 +30,4 @@ Be Amazed!:
 
 ![Alt text](<README Screenshots/Screenshot 2024-02-20 at 10.20.37 AM.png>)
 
-For any concerns or suggestions please email: m-rate@googlegroups.com
+For any concerns or suggestions please email: m-rate@googlegroups.com or open a pull request.
