@@ -1,33 +1,101 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>M-Rate: UMD's Rate My Professor Integration</title>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>M-Rate: UMD's Rate My Professor Integration</title>
   <style>
+    :root {
+      --primary-color: #00274C;
+      --accent-color: #FFCB05;
+      --background-color: #00274C;
+      --text-color: #333;
+      --popup-background-color: #00274C;
+      --border-color: var(--accent-color);
+      --fade-color: #000000;
+    }
+
     body {
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: 'IBM Plex Sans', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: var(--primary-color);
+      color: var(--accent-color);
+      animation: fadeIn 0.5s ease forwards;
+      max-width: 1000px;
+      width: 250px;
+    }
+
+    div {
+      background-color: var(--popup-background-color);
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px solid var(--accent-color);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 0.5s ease forwards;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h4 {
+      color: var(--accent-color);
+    }
+
+    hr {
+      border-color: var(--border-color);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--accent-color);
+    }
+
+    .button,.button:visited {
+      background-color: var(--background-color);
+      color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+      padding: 10px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .button:hover {
+      background-color: darken(var(--accent-color), 10%);
+      border: 1px solid #137dd3;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+      }
     }
   </style>
-
-  <body>
-    <div style="text-align: center">
-      <h1>M-Rate</h1>
-      <hr />
-      <img
-        src="./UM-Dearborn_Logo-CMYK-with_rule.webp"
-        alt="UM-D Rate My Professors Extension"
-        width="100"
-        height="100"
-      />
-      <p>Go to college scheduler to use this extension.</p>
-    </div>
+</head>
+<body>
+  <div style="text-align: center">
+    <h1>M-Rate</h1>
     <hr />
-    <div><h4>How to use:</h4></div>
-    <p>Click the icon next to the professors name to view their RMP stats.</p>
-  </body>
+    <img src="Logos/UM-Dearborn_Logo-CMYK-with_rule.webp" alt="UM-D Rate My Professors Extension" width="100" height="100" />
+    <p>Click the <strong>M</strong> icon next to the professors name to view their RMP statistics.</p>
+    <a href="https://apps-banner-xe6-prod.its.umd.umich.edu:7005/StudentRegistrationSsb/ssb/term/termSelection?mode=search" class="button" target="_blank" rel="noopener noreferrer">Take me there!</a>
+    <hr />
+    <a style="text-align: right" href="" class="button" target="_blank" rel="noopener noreferrer">Leave a rating if you enjoyed!</a>
+  </div>
+</body>
 </html>

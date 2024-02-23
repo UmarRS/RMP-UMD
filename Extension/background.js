@@ -1,5 +1,1053 @@
 const rmpDatabase = [
   {
+    name: "Wessam Elmeligi",
+    rating: "5",
+    numberOfRatings: "15",
+    difficultyLevel: "2",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "This is for COML 303. Summer semester II: Only 2 months. There are two groups in this course. The ones going for an Arab certificate and the ones that take this for elective. An assignment each week with a recorded lecture. Homework and lectures are super easy. Work can be done in a day. There's literally no reason to fail. Take him if you can!"
+},
+{
+    name: "Sarah Nesbitt",
+    rating: "5.1",
+    numberOfRatings: "3",
+    difficultyLevel: "1.8",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "A pretty relaxed class and professor. Projects can be daunting but she's an easy grader and lets you resubmit them for more points. During project work weeks, all class periods become work days where you can just focus and work on your projects which I appreciate."
+},
+{
+    name: "Vivek Bhise",
+    rating: "3.6",
+    numberOfRatings: "12",
+    difficultyLevel: "3.8",
+    takeAgainPercentage: "50%",
+    mostRecentReview: "Best One !...."
+},
+{
+    name: "Jaerock Kwon",
+    rating: "2.1",
+    numberOfRatings: "16",
+    difficultyLevel: "3.7",
+    takeAgainPercentage: "25%",
+    mostRecentReview: "wonderful"
+},
+{
+    name: "Besa Xhabija",
+    rating: "5",
+    numberOfRatings: "7",
+    difficultyLevel: "3.3",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Prof Xhabija is a great prof, I have her for chem health sciences lab 151 and she is great, the class is online for me and the labs are through a simulation, super easy class and the prof seems so nice, I have heard great things from her from people who take her class in person as well. I finished the whole class in 1 day. this is for CHEM 151"
+},
+{
+    name: "Codruta Savu",
+    rating: "4.3",
+    numberOfRatings: "15",
+    difficultyLevel: "3.3",
+    takeAgainPercentage: "89%",
+    mostRecentReview: "Amazingg She's veryy lovely and helpful you can ask her as much as you want and her pre lab quizes are not the hard when you read but you shoud know details like numbers"
+},
+{
+    name: "Simona Marincean",
+    rating: "3.5",
+    numberOfRatings: "45",
+    difficultyLevel: "3.8",
+    takeAgainPercentage: "69%",
+    mostRecentReview: "She has a reputation for being a harsh grader; I agree on this to an extent. I could have studied better but the course I took was over the summer (same content, 1/2 the time). She was reachable in office hours and helped me understand stuff better. She isn't rude, is willing to go over stuff again, gave extra credit, and curved, which helped LOTS!"
+},
+{
+    name: "Shixin Liu",
+    rating: "3",
+    numberOfRatings: "1",
+    difficultyLevel: "4",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: "Liu provides helpful feedback on your homework and questions on class material if you ask. The grading scale for the class was also quite forgiving (A=85% post curve). Unfortunately, he has a thick accent and moved too quickly during lectures where he mostly taught off slides, meaning I had to teach myself the material from the book outside class."
+},
+{
+    name: "Cheol Lee",
+    rating: "3.3",
+    numberOfRatings: "21",
+    difficultyLevel: "4",
+    takeAgainPercentage: "50%",
+    mostRecentReview: "What to expect: He goes through lectures quick with a heavy accent, not enough time to write down notes. expect him to say I can't help you with homework. Material covered 2 days before each exam will be on one of the 3 Exams each worth 28%. No test prep or review of any kind. Exam material is often completely different from Homework or examples"
+},
+{
+    name: "Rachel Mifsud",
+    rating: "2.8",
+    numberOfRatings: "77",
+    difficultyLevel: "3.3",
+    takeAgainPercentage: "72%",
+    mostRecentReview: "For the first half of the semester you are doing a weekly quiz and short essay. The second half you will be creating a portfolio by completing some projects and assignments from a large list of topics you can choose from. At first the setup is a little confusing but she responds quickly to emails and texts."
+},
+{
+    name: "Kassandra Semrau",
+    rating: "3.9",
+    numberOfRatings: "19",
+    difficultyLevel: "3.4",
+    takeAgainPercentage: "72%",
+    mostRecentReview: "Do yourself a favor and never sign up for a class with this professor."
+},
+{
+    name: "Tim Davis",
+    rating: "N/A",
+    numberOfRatings: "",
+    difficultyLevel: "N/A",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: ""
+},
+{
+    name: "Farah Harb",
+    rating: "4.8",
+    numberOfRatings: "22",
+    difficultyLevel: "1.9",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Mrs. Harb was intelligent & helpful for real life applications like updating your resume, advancing your career, & anything you may ask her about. However, this class had far too much reading assigned for a 1 credit class as well as weekly homework assignments. I wouldn't take another class with her, but she would make a great mentor."
+},
+{
+    name: "Jennifer Coon",
+    rating: "N/A",
+    numberOfRatings: "",
+    difficultyLevel: "N/A",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: ""
+},
+{
+    name: "Janice Molloy",
+    rating: "4.1",
+    numberOfRatings: "27",
+    difficultyLevel: "2.5",
+    takeAgainPercentage: "85%",
+    mostRecentReview: "Cant believe I'm saying this but BPS535 with janice is easily the best class in the MBA! I was scared of taking this course whether with her or Kumar (who retired) because the rumors were it was hard. And it was...until janice decided to evolve the entire course completely! She developed the assignments gradually which was very chillax for students"
+},
+{
+    name: "Fadia  Cudry",
+    rating: "5",
+    numberOfRatings: "3",
+    difficultyLevel: "3.8",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "This place has some miserable instructors to avoid at all costs.  Dr. Cudry isn't one of them.  She's patient, kind, and funny.  She goes out of her way to make sure everyone feel welcome. She's demanding but fair.  You won't be disappointed taking her class."
+},
+{
+    name: "Judith Bazzi",
+    rating: "3.3",
+    numberOfRatings: "50",
+    difficultyLevel: "3.8",
+    takeAgainPercentage: "24%",
+    mostRecentReview: "Very lazy prof she doesn't grade anything till the day the semester ends. Her quizzes were very hard and I heard from friends she is worse for lab she is a tough grader and made her pre lab quizzes very hard."
+},
+{
+    name: "Ann Stemmler",
+    rating: "2.4",
+    numberOfRatings: "31",
+    difficultyLevel: "3.9",
+    takeAgainPercentage: "34%",
+    mostRecentReview: "had her as a substitute lab prof. she was so mean and rude to our entire lab section within 5 minutes of meeting us. she was also a huge micromanager. would not recommend"
+},
+{
+    name: "Saleela Hollingsworth",
+    rating: "N/A",
+    numberOfRatings: "",
+    difficultyLevel: "N/A",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: ""
+},
+{
+    name: "Mariam Mehdi",
+    rating: "5",
+    numberOfRatings: "4",
+    difficultyLevel: "2.1",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "I would recommend Professor Mehdi to anyone. I had her for recitation and she made it easy to digest orgo 1. Work in groups on short problems turn in for completion. quizzes are always fair! Drops lowest quiz. Have no complaints"
+},
+{
+    name: "Christos Constantinides",
+    rating: "4",
+    numberOfRatings: "41",
+    difficultyLevel: "3.5",
+    takeAgainPercentage: "68%",
+    mostRecentReview: "I'm usually a straight A student and got a B-. Exams were unnecessarily difficult. The only good thing about his class was he gives a major curve. Can be somewhat condescending in class, especially in recitation if you don't know the answer."
+},
+{
+    name: "Craig Donahue",
+    rating: "3",
+    numberOfRatings: "97",
+    difficultyLevel: "3.9",
+    takeAgainPercentage: "47%",
+    mostRecentReview: "My experience with Professor Donahue in Gen Chem was disappointing. Unclear instruction, inconsistent feedback, limited availability, and unengaging lectures created challenges. Caution to others considering the course.r Donahue's courses."
+},
+{
+    name: "Margaret Murray",
+    rating: "2.8",
+    numberOfRatings: "4",
+    difficultyLevel: "3.5",
+    takeAgainPercentage: "67%",
+    mostRecentReview: "Wouldn't take again."
+},
+{
+    name: "Jerrice Donelson",
+    rating: "1.4",
+    numberOfRatings: "26",
+    difficultyLevel: "4.4",
+    takeAgainPercentage: "19%",
+    mostRecentReview: "Not good by any means. Explanation for submitting things are confusing, told students to resubmit assignment but still took half points off for late. Doesnt respond to students timely and when she does is incredibly rude not even answering what you ask. Link to syllabus doesnt even work but blames what students do wrong on lack of using material"
+},
+{
+    name: "Probir Roy",
+    rating: "3.8",
+    numberOfRatings: "16",
+    difficultyLevel: "4",
+    takeAgainPercentage: "80%",
+    mostRecentReview: "Professor wasn't that bad; the class didn't have as much assembly as I thought. Mostly covered hardware, logic gates and boolean algebra. Tests are fairly easy but only if you study and not expect to survive on open note and laptop. Make sure to attend or at least watch every lecture because answers on the tests are often in the example exercises."
+},
+{
+    name: "Raef Aidibi",
+    rating: "5",
+    numberOfRatings: "4",
+    difficultyLevel: "2.9",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "(btw I took CIS 150 not 310) Very sweet and understanding professor. If you need extra time he will happily give it. Knows his stuff and actually answers questions in a way that is helpful.  I will say the coursework is a bit much if you actually try to go though it slowly and comprehend it, but you should be able to handle it."
+},
+{
+    name: "Luis Ortiz",
+    rating: "2.4",
+    numberOfRatings: "40",
+    difficultyLevel: "3.9",
+    takeAgainPercentage: "34%",
+    mostRecentReview: "Best professor I have ever had. Very difficult but be patient and study hard. He is very accessible and cares a lot about his students. His projects are very hard but they help you grow a lot. Learned a lot in this course but it really is challenging. If you like a challenge and like to self learn take Professor Ortiz"
+},
+{
+    name: "Syed Rizvi",
+    rating: "3.4",
+    numberOfRatings: "4",
+    difficultyLevel: "3.8",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Prof. Rizvi genuinely cares, going past office hrs to help students (by 1-2 hrs!) The course is manageable w/ commitment. He grants extra time on assignments w/o hesitation & he moves w/ pace of students. My experience with has been positive. I'd def. take his class again!! Also TA is unreachable &harsh, causing unfair ratings abt the prof!"
+},
+{
+    name: "Thomas Steiner",
+    rating: "2.4",
+    numberOfRatings: "17",
+    difficultyLevel: "4.6",
+    takeAgainPercentage: "32%",
+    mostRecentReview: "With 6 weeks left of school this is the workload that he assigned: a 10-15 page survey paper (using 5-10 research papers), a 25-30 paper on a hands-on technical project, 35 minute minimum presentation, a 3rd mini-project, and there's a final exam. This professor lives by quantity over quality. Good luck."
+},
+{
+    name: "Hany Othman",
+    rating: "1",
+    numberOfRatings: "1",
+    difficultyLevel: "1",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: "No idea how this professor has gotten away with teaching like this for so long. Genuinely a con artist. He makes you buy a $150 course and dips. His teaching is him going over each chapter on TestOut, going ya this is important frfr and telling you glhf. Someone complained about him so he punished the entire class. Admittedly an easy A though."
+},
+{
+    name: "Niccolo Meneghetti",
+    rating: "2.7",
+    numberOfRatings: "8",
+    difficultyLevel: "4.5",
+    takeAgainPercentage: "50%",
+    mostRecentReview: "This professor can give some tough homework and tests, but through them I learned more than all of my other courses. It forces you to actually understand what you are doing rather than passing easily and forgetting everything after the semester. He is also very willing to help you understand difficult material during office hours, so use that."
+},
+{
+    name: "Zheng Song",
+    rating: "4.6",
+    numberOfRatings: "9",
+    difficultyLevel: "3.6",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "This professor is one of the best that I had at Dearborn. He makes sure that students understand the material before moving on to the next chapter. This course consists of Kahoots, 2 exams, 4 homework(1 gets dropped), and two programming assignments. There is also plenty of extra credit in this course so getting an A  is achievable.need 90 for an A"
+},
+{
+    name: "Probir Roy",
+    rating: "3.8",
+    numberOfRatings: "16",
+    difficultyLevel: "4",
+    takeAgainPercentage: "80%",
+    mostRecentReview: "Professor wasn't that bad; the class didn't have as much assembly as I thought. Mostly covered hardware, logic gates and boolean algebra. Tests are fairly easy but only if you study and not expect to survive on open note and laptop. Make sure to attend or at least watch every lecture because answers on the tests are often in the example exercises."
+},
+{
+    name: "Qiang Zhu",
+    rating: "4.3",
+    numberOfRatings: "19",
+    difficultyLevel: "3.4",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "I think this is the nicest teacher the school has every had. straight forward. grades are good. extremely helpful. I wish I had him for all of my classes."
+},
+{
+    name: "David Moore",
+    rating: "3.5",
+    numberOfRatings: "18",
+    difficultyLevel: "3.3",
+    takeAgainPercentage: "59%",
+    mostRecentReview: "Professor Moore has a lot of experience and knows what he is talking about. Not the most knowledge in technology, so his lectures are very discussion based. He really gets the class engaged. The book is where all the info comes from so make sure to read and you'll be set."
+},
+{
+    name: "Kathleen Darcy",
+    rating: "N/A",
+    numberOfRatings: "",
+    difficultyLevel: "N/A",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: ""
+},
+{
+    name: "Kevin Early",
+    rating: "1.6",
+    numberOfRatings: "5",
+    difficultyLevel: "4.4",
+    takeAgainPercentage: "34%",
+    mostRecentReview: "PT. 2 We had a project and had addressed that we are all facing discrimination against a student and he had done nothing about it, he complains about plagiarism but all his tests and quizzes are on Quizlet...says alot about his criteria for honest work ethics DO NOT TAKE HIM!!!!!!!!"
+},
+{
+    name: "Harmony Reppond",
+    rating: "3.2",
+    numberOfRatings: "55",
+    difficultyLevel: "3.7",
+    takeAgainPercentage: "50%",
+    mostRecentReview: "Honestly biggest regret of the semester! Unclear in what she wants. Cant lecture to save her life basically reads off her notes and cant answer any question anyone has asked this semester. My Calc and chemistry classes are easier.Tests are worded so confusing and paragraphs long. What should of been an easy class is torture! AVOID!"
+},
+{
+    name: "Yiwan Ye",
+    rating: "1",
+    numberOfRatings: "2",
+    difficultyLevel: "4",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: "This class is atrocious. For his deficiency in teaching the material, this course shouldn't be as difficult. There are extremely high expectations for work he fails to provide feedback (which he stated would give) & gives contradictory information on (lecture vs. announcements). You never know what he wants.FRUSTRATING, AVOID AT ALL COSTS!"
+},
+{
+    name: "Annette Jurkiewic",
+    rating: "5",
+    numberOfRatings: "14",
+    difficultyLevel: "1.9",
+    takeAgainPercentage: "93%",
+    mostRecentReview: "Professor Berry is very respectful and kind. She really cares about her students and is very nice. Beware she does like to talk a bit and sometimes gets off topic but she likes to share her experiences. 2 exams and a group project, as long as you took notes and prepared for the exams you'll be fine. Highly recommend her and will be taking her again"
+},
+{
+    name: "Nancy Wrobel",
+    rating: "4",
+    numberOfRatings: "49",
+    difficultyLevel: "2.8",
+    takeAgainPercentage: "73%",
+    mostRecentReview: "Difficult class, lots of work and it took so long to study for exams because they were difficult, 2 assignments and 4 exams. The lectures were a bit bland but we didn't get behind like every other class I have so that was appreciated. READ THE BOOK it helps so much"
+},
+{
+    name: "Colleen Wilson-Rood",
+    rating: "4",
+    numberOfRatings: "5",
+    difficultyLevel: "3.1",
+    takeAgainPercentage: "75%",
+    mostRecentReview: "Had a great experience with this prof. Course is well laid out. Mostly, you only cover one textbook chapter a week which is very manageable. Overall easy course - uses lockdown browser w/o camera. Take great notes and study well to get an A."
+},
+{
+    name: "Aaron Kinzel",
+    rating: "4.5",
+    numberOfRatings: "27",
+    difficultyLevel: "2.8",
+    takeAgainPercentage: "75%",
+    mostRecentReview: "It's a bit hard to rate Professor Kinzel, on one hand he is very experienced and definitely qualified to teach the course, and he does have a great amount of passion for the content. On the other hand, the class flows quite strangely and the assignments get graded very slowly. I took the course for upper level credit, maybe not again with Kinzel."
+},
+{
+    name: "Donald Shelton",
+    rating: "5",
+    numberOfRatings: "19",
+    difficultyLevel: "2.3",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Must watch 1-3 lecture videos every week. His quizzes are very straightforward and short. They come right from the lectures so make sure you take notes. His videos may be long, but they are interesting. I did not need to use the textbook. I enjoyed his class because the way he taught it made it very fun."
+},
+{
+    name: "Edward Williams",
+    rating: "3.1",
+    numberOfRatings: "77",
+    difficultyLevel: "3.9",
+    takeAgainPercentage: "40%",
+    mostRecentReview: "AVOID AT ALL COSTS. Very ruthless, careless, and will set you up for failure. He complicates EVERYTHING. The class structure was very poor. Assignment and test instructions were very vague. When you email him he will not do anything to help you."
+},
+{
+    name: "Ilir Miteza",
+    rating: "3.8",
+    numberOfRatings: "60",
+    difficultyLevel: "3.8",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "For an online professor he was great, would take again. If you hate group projects I wouldn't recommend taking him but he's pretty good."
+},
+{
+    name: "Daniel Mulder",
+    rating: "4",
+    numberOfRatings: "36",
+    difficultyLevel: "3",
+    takeAgainPercentage: "85%",
+    mostRecentReview: "Not the greatest at updating grades. This class was an easy A. Very relaxed grader. Exams are not hard & he requires you to prepare your short answer/essay questions ahead of time so you can just copy/paste your responses. Note that he says to only use Firefox for exams to see the graphs but many had issues seeing graphs w/ Firefox, use Chrome."
+},
+{
+    name: "Hans Czap",
+    rating: "3.6",
+    numberOfRatings: "56",
+    difficultyLevel: "4",
+    takeAgainPercentage: "62%",
+    mostRecentReview: "If you have a hard time with exams and quizzes do not take him. His point system is horrible. 24 questions; 200 points on his exams. 8 questions; 40 points on his quizzes. Better off waiting till a better professor opens up."
+},
+{
+    name: "Natalia Czap",
+    rating: "3.4",
+    numberOfRatings: "20",
+    difficultyLevel: "3.5",
+    takeAgainPercentage: "78%",
+    mostRecentReview: "Professor Natalia Czap is an excellent teacher. Just do whatever you are asked for and you will get an easy A!"
+},
+{
+    name: "Paul Fossum",
+    rating: "3.1",
+    numberOfRatings: "46",
+    difficultyLevel: "3",
+    takeAgainPercentage: "88%",
+    mostRecentReview: "He shouldn't be teaching an online class. I have had him in person before and his class was kind of better. This online course is unorganized and his assignments are all over the place. We don't have a book. None of us is happy in his class. Run from this class! I should've taken this class at Wayne State like other students. Not recommended!"
+},
+{
+    name: "Brian Boggs",
+    rating: "4.6",
+    numberOfRatings: "20",
+    difficultyLevel: "2.3",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: "Professor Brian's class is very stressful! He doesn't teach but expects you to learn on your own. He gives too much work. Too many assignments are due each week. I took his class because the rating was perfect, but this is not true. I have never had a professor that gives so much work each week. Not recommended at all! RUN from his class!!!!"
+},
+{
+    name: "Sarah Davey",
+    rating: "5",
+    numberOfRatings: "1",
+    difficultyLevel: "2",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "She is truly one of the best professors Ive had at UMD and easily one of my favorite classes. She is knowledgeable about early childhood and I really wish she taught more courses and took the place of some other lousy professors! She honestly cares about her students success and is so easy to talk to. I highly recommend her as a professor!"
+},
+{
+    name: "Dr. LaTisha Young",
+    rating: "4.6",
+    numberOfRatings: "6",
+    difficultyLevel: "3.3",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "She's very nice but there is so much work! It's like she thinks her class is the only one we're taking. The class was interesting but the amount of work made it not as enjoyable as I thought. There's one group project that is worth a good portion of your grade but I thought it was pretty fun (again just really time consuming)."
+},
+{
+    name: "David Hill",
+    rating: "4.3",
+    numberOfRatings: "9",
+    difficultyLevel: "3",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "I took this course in person. He is Amazing. He will make sure you understand the material. The assignments are always due same day every week, simple. Get the Books, you have weekly assigned readings. He isn't a strict grader and if you want him to extend assignment dates just be honest he's understanding. He used to be a lawyer so thats cool!"
+},
+{
+    name: "Joann Honigman",
+    rating: "3.5",
+    numberOfRatings: "2",
+    difficultyLevel: "2",
+    takeAgainPercentage: "50%",
+    mostRecentReview: "EDC 445: This professor is fantastic! She's caring and understanding, making the class enjoyable. We only had a couple of assignments, and the final exam was a take-home one. Just two questions, and the last one even offered extra credit. With the class out of 100 points, every point matters, but she makes it all manageable and positive."
+},
+{
+    name: "Erin Bronstein",
+    rating: "5",
+    numberOfRatings: "1",
+    difficultyLevel: "2",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "I love Erin. She has been by far my best & my favorite professor at Oklahoma State University thus far. She has helped me really see how much I love & desire to teach young minds & inspire my future students. She's passionate about education & history & she shares her passion and love for both with her students. I highly, HIGHLY recommend!! (:"
+},
+{
+    name: "Alireza Khalilian",
+    rating: "5",
+    numberOfRatings: "1",
+    difficultyLevel: "1",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Very kind and passionate, encourages students and he's very understanding. Just show up, engage in lecture, show interest, and do the work (doesn't assign a lot) and you'll get a good grade. He cares for effort. Show effort and respect him and his class and you won't worry about passing. Great person and professor :)"
+},
+{
+    name: "Herbert Kaufman",
+    rating: "3.6",
+    numberOfRatings: "57",
+    difficultyLevel: "2.4",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Be patient he is very old. Overall great guy."
+},
+{
+    name: "Jennifer Zhao",
+    rating: "4",
+    numberOfRatings: "66",
+    difficultyLevel: "2.4",
+    takeAgainPercentage: "77%",
+    mostRecentReview: "Wasn't too bad. Had quizzes/ tests every week (week one quiz, week two test, and so on) but if you watch her lectures, do the practice problems that she provides, and also try a few from the textbook yourself, you would usually get 100%. Two exams as well which will cover half and half of the chapters she covered, but those are the easiest."
+},
+{
+    name: "Yulia Georgieva-Hristova",
+    rating: "4.4",
+    numberOfRatings: "21",
+    difficultyLevel: "2.6",
+    takeAgainPercentage: "85%",
+    mostRecentReview: "Great professor who relays information in an easy and clear way. Does lecture notes in class and posts afterwards. Beware of weekly tests and quizzes, although not too difficult if you study the lecture notes. Always makes it clear what you need to know for exams. Can be a tough grader sometimes but other than that, very sweet and caring lady."
+},
+{
+    name: "Taehyung Kim",
+    rating: "4.4",
+    numberOfRatings: "25",
+    difficultyLevel: "3",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Extremely smart guy who is really passionate about the subject matter (EM Drives is his specialty) but also just a very good teacher. Always willing to help when you ask questions. 2 HW assignments, 2 exams, & a term project, very fair grader. I feel like I will remember his material more than most other professors I've taken."
+},
+{
+    name: "Mengqi Wang",
+    rating: "2.3",
+    numberOfRatings: "4",
+    difficultyLevel: "4",
+    takeAgainPercentage: "50%",
+    mostRecentReview: "The class was interesting, there were two tests and final. The class is based heavily on memorization of circuit derivations/waveforms. The final exam was silly as EVERYTHING in the class was fair game. If you memorize the derivations/waveforms for Buck, Boost, Buck-Boost, Cuk, Sepic, Forward, Flyback, Half Bridge, Full Bridge, you will get an A."
+},
+{
+    name: "Khalil Zbiss",
+    rating: "5",
+    numberOfRatings: "1",
+    difficultyLevel: "4",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "The lab was fun."
+},
+{
+    name: "Birhanu Eshete",
+    rating: "4.9",
+    numberOfRatings: "18",
+    difficultyLevel: "3.9",
+    takeAgainPercentage: "95%",
+    mostRecentReview: "The most organized and enjoyable course I ever took @UMICH-Dearborn. He always spices up lectures with practical demos, which was a great booster for me to understand the material. You will definitely learn a lot!"
+},
+{
+    name: "David Daniszewski",
+    rating: "4.3",
+    numberOfRatings: "3",
+    difficultyLevel: "2.3",
+    takeAgainPercentage: "67%",
+    mostRecentReview: "The class is not hard but rather normal, however, the professor wasn't organized at all. He uploaded the syllabus one month after the class began, jumps back and forth between subjects which made studying for the Midterm very confusing, and studying from the notes is a must. Late to reply and uploading material. He is fair though and tries to help."
+},
+{
+    name: "Sridhar Lakshmanan",
+    rating: "1",
+    numberOfRatings: "2",
+    difficultyLevel: "5",
+    takeAgainPercentage: "0%",
+    mostRecentReview: "horrible professor.  not helpful at all and redirects all questions you have to the TA/Grader (who also didn't respond to me).  if the TA is the only resource for questions then what is the point of the professor and why do they get paid???  this class put a dark cloud over my program and the entire university for me."
+},
+{
+    name: "Xuan Zhou",
+    rating: "4.4",
+    numberOfRatings: "5",
+    difficultyLevel: "2.2",
+    takeAgainPercentage: "80%",
+    mostRecentReview: "If you're struggling, make sure to meet with him outside of class. Dr. Zhou really cares about students, and he is one of the few professors who genuinely tries to make a change based on student feedback. Print off the PowerPoint slides and write on them instead of taking notes in a notebook. It's much easier to keep up."
+},
+{
+    name: "Redhwan Mawari",
+    rating: "5",
+    numberOfRatings: "4",
+    difficultyLevel: "2",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Professor Mawari is great. He explains the material very well, and is clear on what the expectations are for exams. The exams are based heavily on what's practiced in the homework/lectures, so no surprises or curveballs. He is also very considerate when it comes to due dates, emails and office hours. He truly wants to see every student succeed."
+},
+{
+    name: "Ben Li",
+    rating: "2.3",
+    numberOfRatings: "12",
+    difficultyLevel: "3.9",
+    takeAgainPercentage: "34%",
+    mostRecentReview: "tough material is covered in the class but as long as you're willing to put in the work, has more than willing to help you out and passing isn't very difficult"
+},
+{
+    name: "Shelly Jeranski",
+    rating: "N/A",
+    numberOfRatings: "",
+    difficultyLevel: "N/A",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: ""
+},
+{
+    name: "Nancy Hanus",
+    rating: "2",
+    numberOfRatings: "2",
+    difficultyLevel: "4.5",
+    takeAgainPercentage: "0%",
+    mostRecentReview: "Professor Hanus is nice but she's a very tough grader. I'm glad she lets you rewrite papers because she'll give you bad grades on literally everything! I get that she works in the business but I've had professors who have given better feedback without being so critical of every little thing."
+},
+{
+    name: "Nikki Roulo",
+    rating: "4.1",
+    numberOfRatings: "13",
+    difficultyLevel: "2.8",
+    takeAgainPercentage: "84%",
+    mostRecentReview: "Best Engl 105 professor, take her"
+},
+{
+    name: "Jerrice Donelson",
+    rating: "1.4",
+    numberOfRatings: "26",
+    difficultyLevel: "4.4",
+    takeAgainPercentage: "19%",
+    mostRecentReview: "Not good by any means. Explanation for submitting things are confusing, told students to resubmit assignment but still took half points off for late. Doesnt respond to students timely and when she does is incredibly rude not even answering what you ask. Link to syllabus doesnt even work but blames what students do wrong on lack of using material"
+},
+{
+    name: "Marcus Harris",
+    rating: "3.3",
+    numberOfRatings: "38",
+    difficultyLevel: "4.4",
+    takeAgainPercentage: "46%",
+    mostRecentReview: "The grading criteria is rather un-clear and do not expect to receive more than a B on the group presentation even if you follow the rubric he provides and as for other assignments he will mark you down a fair bit for seemingly no reason. The workload in this class is rather low and that is the only up-side. Take this class with another professor."
+},
+{
+    name: "Sven Morgan",
+    rating: "5",
+    numberOfRatings: "1",
+    difficultyLevel: "2",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "The best professor ever. He makes class so enjoyable and is always cracking jokes even on his quizzes. He also teaches very well and draws everything on the board so it can be clear. Made learning geology very fun and gives you a study guide before exams with all the exam questions on it so its impossible to fail. This was my favorite class!!!"
+},
+{
+    name: "Kriszta Sajber",
+    rating: "5",
+    numberOfRatings: "10",
+    difficultyLevel: "1.9",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "One of my favorite professors! So understanding and content is made easy by her great explanations. I would 100% recommend this professor!"
+},
+{
+    name: "Jennifer Harper",
+    rating: "4",
+    numberOfRatings: "1",
+    difficultyLevel: "2",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Lecture and quiz for every chapter, bigger assessment every 3 chapters, no final, yes textbook needed. Big research paper due towards the end and lots of discussion posts. Seems like a lot but all are straightforward besides the paper but she's super open to helping. Also super knowledgeable."
+},
+{
+    name: "Magali Valero",
+    rating: "3.8",
+    numberOfRatings: "50",
+    difficultyLevel: "3",
+    takeAgainPercentage: "82%",
+    mostRecentReview: "An amazing professor. Literally walks you through homework problems if you email her. As long as you watch her lectures, do the homework, and take good notes you will get an A. The group project was so easy. She will give you the answers if you ask her."
+},
+{
+    name: "Kelly Cai",
+    rating: "4.6",
+    numberOfRatings: "21",
+    difficultyLevel: "2.4",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "This is the best darn finance Professor I have EVER encountered at UM-Dearborn. Failed this class ONCE with Professor Tuncez and when I took this class with Professor Cai I passed with a B-. THAT should tell you something. Let this be your warning, take either Professor Kelly Cai or Professor Claudia for any finance classes."
+},
+{
+    name: "Michelle Jarenski",
+    rating: "4.3",
+    numberOfRatings: "23",
+    difficultyLevel: "2.6",
+    takeAgainPercentage: "80%",
+    mostRecentReview: "Professor Jarenski is incredible. She really made this class easy to navigate during a pandemic and did not grade harshly. She is very understanding and her assignments are always interesting and reasonable. We had one paper with optional dates to turn it in, a mid term, a final, and weekly discussion boards or annotations. Lovely professor!"
+},
+{
+    name: "Hani Bawardi",
+    rating: "3.8",
+    numberOfRatings: "95",
+    difficultyLevel: "3.4",
+    takeAgainPercentage: "53%",
+    mostRecentReview: "Took his class in the summer. He gets to the point. The class consisted of discussion boards, research papers, and a final. He grades fairly and leaves helpful comments. I would totally recommend this professor."
+},
+{
+    name: "Zeinab Lecanu",
+    rating: "5",
+    numberOfRatings: "11",
+    difficultyLevel: "2.8",
+    takeAgainPercentage: "91%",
+    mostRecentReview: "Professor Lecanu is the best! She's a native speaker and her classes are so much fun!"
+},
+{
+    name: "Jerilyn Mannion",
+    rating: "5",
+    numberOfRatings: "35",
+    difficultyLevel: "2.3",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "I can't understate how good of a professor Madame Mannion is. She has done an excellent job of teaching the curriculum and I have never found any part of it to be too difficult. Her practice tests and study guides make her expectations clear and she is always willing to make accommodations to ensure that students are comfortable with the workload."
+},
+{
+    name: "Timothee Valentin",
+    rating: "4",
+    numberOfRatings: "3",
+    difficultyLevel: "3",
+    takeAgainPercentage: "67%",
+    mostRecentReview: "Good lectures, engaging and fun. Accused me of cheating in my 2nd week but after that everything was smooth. Be careful with how advanced your answers are."
+},
+{
+    name: "Tammy Grace",
+    rating: "5",
+    numberOfRatings: "104",
+    difficultyLevel: "2.8",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Dr. Grace was great! She was a fair grader and took her time to explain graded assignments. This was my first class in grad school and it was a great start! Do the work and try your best! She is hilarious and gives extra credit"
+},
+{
+    name: "China Cargile",
+    rating: "3",
+    numberOfRatings: "2",
+    difficultyLevel: "1",
+    takeAgainPercentage: "50%",
+    mostRecentReview: "Plenty of time to do assignments which are discussion boards they are very straightforward. One group project was fun we just made a PowerPoint presentation about social injustice, very easy. I have emailed her a few times and she responded back instantly with kind words. No exams or quizzes are given in the class which is a bonus. Highly recommend"
+},
+{
+    name: "Leonardo Kattari",
+    rating: "5",
+    numberOfRatings: "1",
+    difficultyLevel: "1",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Leo is hands down the best professor I have ever had! He is beyond thoughtful, caring, respectful, empathetic, responsive and engaging! The class was 707: Trans Clients and he really did an outstanding job creating a safe and welcoming space to discuss transgender and nonbinary clients/populations/experiences. I can't say it enough, TAKE THIS CLASS"
+},
+{
+    name: "Joseph Dunne",
+    rating: "3.8",
+    numberOfRatings: "41",
+    difficultyLevel: "3.4",
+    takeAgainPercentage: "88%",
+    mostRecentReview: "He never answers emails and is very hard to get in contact with if you have a question. He can be a somewhat difficult grader but as long as you try and meet the length requirements of the essay that's what seems to matter to him. His assignments are INSANLY long! There's 3 guided readings to complete and it took 4+ hours to do each time. AVOID!"
+},
+{
+    name: "Kaitlyn Harder",
+    rating: "4.5",
+    numberOfRatings: "26",
+    difficultyLevel: "4.4",
+    takeAgainPercentage: "84%",
+    mostRecentReview: "Prof Harder's health care and Law class was pretty chill. Just make sure you participate, do the assignments and it'll be an easy class."
+},
+{
+    name: "Jamie Wraight",
+    rating: "4.9",
+    numberOfRatings: "34",
+    difficultyLevel: "2.6",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Hybrid class. Met once a week. Assigned two books, did not read either passed with 95%. Great professor, focused more on teaching than cramming assignments down throats. Did 1 project, 1 final exam, 2 papers, and was able to miss 2 classes before my grade would have been reduced. Overall, would take him as a professor again! Blunt but fair!"
+},
+{
+    name: "Pamela Pennock",
+    rating: "4",
+    numberOfRatings: "83",
+    difficultyLevel: "3.7",
+    takeAgainPercentage: "67%",
+    mostRecentReview: "Shes a wonderful professor who cares about how her students do. There is a lot of reading and the quizzes can be tricky. HOWEVER, shes more than willing to help and gives you extra materials like reading guides to help you which I really appreciated. I loved her class and how she taught it. She keeps it interesting and shows she really does care."
+},
+{
+    name: "Kristin Poling",
+    rating: "4",
+    numberOfRatings: "20",
+    difficultyLevel: "3.4",
+    takeAgainPercentage: "88%",
+    mostRecentReview: "Professor Poling is a very polite and accessible professor outside of class, usually responding to emails in less than 30 minutes. She's also flexible with due dates in case you can't turn something in on time. The lectures were interesting and it's easy to participate. All of the essays we wrote were creative writing assignments."
+},
+{
+    name: "Hani Bawardi",
+    rating: "3.8",
+    numberOfRatings: "95",
+    difficultyLevel: "3.4",
+    takeAgainPercentage: "53%",
+    mostRecentReview: "Took his class in the summer. He gets to the point. The class consisted of discussion boards, research papers, and a final. He grades fairly and leaves helpful comments. I would totally recommend this professor."
+},
+{
+    name: "Sofia Calzada-Oriheula",
+    rating: "4.2",
+    numberOfRatings: "11",
+    difficultyLevel: "2.6",
+    takeAgainPercentage: "88%",
+    mostRecentReview: "Good teacher, knowledgable. BE ON TIME! Each class a chapter summary is due! 100% spanish spoken. Exams are no joke- 6 chapters ea. dont slouch on vocab! If you miss class, particaption score will drop!. This is a college level course, do not take if your looking for an easy A, you wont get one. You get what you pay for with this class. You learn."
+},
+{
+    name: "Mark Douglass",
+    rating: "2.3",
+    numberOfRatings: "2",
+    difficultyLevel: "1.5",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: "This course was so easy but expect to teach yourself because he's hardly around. All you will have to do is reply to discussion board questions, keep a journal, view links on youtube, and write a paper about African American music. I got a A in the course but your left to your own, so if you need a teacher to instruct you, don't take."
+},
+{
+    name: "Daniel Little",
+    rating: "5",
+    numberOfRatings: "2",
+    difficultyLevel: "4",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Professor Little is a great professor who is polite, flexible with due dates, and accessible outside of class. Attending the lectures once a week was mandatory and you can get called on to participate. 2 presentations, 2 big papers (more than 6 pages), and smaller reading and discussion assignments. Getting an A isn't too hard but requires work."
+},
+{
+    name: "Shelby Zuk",
+    rating: "4.3",
+    numberOfRatings: "10",
+    difficultyLevel: "2.5",
+    takeAgainPercentage: "90%",
+    mostRecentReview: "This class was pretty fun for me and it was also easy as long as you put the effort into each thing she assigns you. Shelby Zuk is really nice and you can tell she is passionate about film. You have a film critique for each film, a discussion every other week, and some quizzes that require the textbook and it has the answers in there."
+},
+{
+    name: "Isaiah Oyewole",
+    rating: "2.1",
+    numberOfRatings: "14",
+    difficultyLevel: "4.5",
+    takeAgainPercentage: "15%",
+    mostRecentReview: "Class is notoriously difficult. He went through examples in class, which I liked, and his examples were typically similar to both homework and exams. He IS a new teacher, so beware. Requires attendance but idk if that even factors into your grade. Very difficult tests, but allowed us to get up to 10% back for everything but final. Little book use."
+},
+{
+    name: "Bochen Jia",
+    rating: "2.8",
+    numberOfRatings: "6",
+    difficultyLevel: "3.8",
+    takeAgainPercentage: "25%",
+    mostRecentReview: "Very bad teacher (too fast with poor explanation). Extremely difficult quizzes and exams. Stay away guys!"
+},
+{
+    name: "Maggie Guo",
+    rating: "4.1",
+    numberOfRatings: "24",
+    difficultyLevel: "3",
+    takeAgainPercentage: "90%",
+    mostRecentReview: "She was really a fantastic professor. She is quiet and difficult to understand at points. but she is so understanding and helpful when you struggle with any material. Highly recommend taking her"
+},
+{
+    name: "Lise Urbaczewski",
+    rating: "3.1",
+    numberOfRatings: "119",
+    difficultyLevel: "3.4",
+    takeAgainPercentage: "41%",
+    mostRecentReview: "Waste of money and waste of time avoid this professor who thinks we got no life!"
+},
+{
+    name: "Michael Molesky",
+    rating: "3.9",
+    numberOfRatings: "5",
+    difficultyLevel: "3.6",
+    takeAgainPercentage: "80%",
+    mostRecentReview: "Amazing professor. Lectures are not shared so take notes because his exams are only based on the lectures. three exams, two case briefs, and little homework that are easily accessible online. He also offers an extra credit opportunity that may seem embarrassing at first, but do it because it will bring up your grade several percent."
+},
+{
+    name: "Steve Aldrich",
+    rating: "N/A",
+    numberOfRatings: "",
+    difficultyLevel: "N/A",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: ""
+},
+{
+    name: "Sean McGrath",
+    rating: "2.8",
+    numberOfRatings: "5",
+    difficultyLevel: "3.8",
+    takeAgainPercentage: "40%",
+    mostRecentReview: "Prof McGrath does not teach you anything at all. He expects us to read the textbook ourselves come back to class and he will present for about 20 minutes about his experience which is really not even about the chapters we read. We are expected to do discussion Qs in class by writing an essay and he never gives feedback. Worst marketing class ever"
+},
+{
+    name: "Lillian Ryall",
+    rating: "4.1",
+    numberOfRatings: "19",
+    difficultyLevel: "1.8",
+    takeAgainPercentage: "86%",
+    mostRecentReview: "I love her. She was always there to help. She also gave good reviews and extra credit opportunities."
+},
+{
+    name: "Michael Keogh",
+    rating: "3",
+    numberOfRatings: "22",
+    difficultyLevel: "3.9",
+    takeAgainPercentage: "70%",
+    mostRecentReview: "Took him for Math 115 at U of M. He was a great teacher and was always willing to explain the material. He truly cares about us students and we could always count on him to be understanding of any situations occurring outside of class. He was funny and gives great advice and conversation as well."
+},
+{
+    name: "Mike Dabkowski",
+    rating: "4.3",
+    numberOfRatings: "14",
+    difficultyLevel: "4.5",
+    takeAgainPercentage: "77%",
+    mostRecentReview: "Great Professor, LOVES what he teaches, only thing you really want in a professor. I took him hybrid for calc III, extremely difficult course and my experience reflected that. My exam average was a low b/high c, but his online quizzes and homework make up 50% of the grade, which are easy aces. Then he curves the exams. Will take again when I can."
+},
+{
+    name: "Hugh Huntley",
+    rating: "4.4",
+    numberOfRatings: "43",
+    difficultyLevel: "3.4",
+    takeAgainPercentage: "79%",
+    mostRecentReview: "Huntly is my favorite professor. I had him for Statics, and then Mechanics. Go To Lecture! Or, if not, get a friend to give you his lecture notes. Those are all you need to do well on the exams. Ignore the unassigned problems. His in-class examples are very similar to his exam problems. Study those. Some students finished exams in half the time."
+},
+{
+    name: "Amanda Esquivel",
+    rating: "2.5",
+    numberOfRatings: "11",
+    difficultyLevel: "4.3",
+    takeAgainPercentage: "67%",
+    mostRecentReview: "Not good"
+},
+{
+    name: "Yi Zhang",
+    rating: "2.5",
+    numberOfRatings: "14",
+    difficultyLevel: "3.6",
+    takeAgainPercentage: "50%",
+    mostRecentReview: "He's a very knowledgeable guy,  pretty enthusiastic about the subject which makes him seem unapproachable. I think because he specializes in automatic transmissions, he thinks its a simple topic (its not.) he doesn't want to fail anyone though, and if you can talk to slightly stubborn people (most professors), you'll be ok."
+},
+{
+    name: "Lei Chen",
+    rating: "1",
+    numberOfRatings: "1",
+    difficultyLevel: "1",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: "Lei Chen was terrible. His lectures consisted of reading slides in broken English and repeating ya unnerrstan? every 5 seconds. By the middle of the semester, only two students showed up to lecture each week. This man has no teaching or communication skills. If you value learning, look somewhere else."
+},
+{
+    name: "Paul Serri",
+    rating: "N/A",
+    numberOfRatings: "",
+    difficultyLevel: "N/A",
+    takeAgainPercentage: "N/A",
+    mostRecentReview: ""
+},
+{
+    name: "Leah Goodwin",
+    rating: "4.5",
+    numberOfRatings: "2",
+    difficultyLevel: "1",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "I learned so much valuable information from this class, the assignments were easy, and the tests were manageable based on the information (study materials and quizzes) that was given. Although some of the in-class activities were unhelpful, I enjoyed her lecture + hands-on approach to teaching. She reignited my love for Science!"
+},
+{
+    name: "Yeong-Hyun Hong",
+    rating: "5",
+    numberOfRatings: "7",
+    difficultyLevel: "1.9",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Amazing Professor! Attendance is taken via in-class assignments. Test are straightforward and projects are easy! Would take again!"
+},
+{
+    name: "Kara Cyr",
+    rating: "5",
+    numberOfRatings: "1",
+    difficultyLevel: "2",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Professor Cyr was extremely friendly and helpful. She seemed genuinely interested in not only her students' school work, but also their lives in general. If I ever had a reason why I needed to miss class, she was extremely understanding and helpful in terms of catching up. Definitely recommend taking a course with her."
+},
+{
+    name: "James Gromak",
+    rating: "3.9",
+    numberOfRatings: "38",
+    difficultyLevel: "3.5",
+    takeAgainPercentage: "78%",
+    mostRecentReview: "He is a nice teacher and makes the lectures interesting. The class is all quizzes(there are 11 of them) which can easily make or break your grade. Take notes in his class, and read the syllabus on canvas. You have to study to get a good grade, but it is doable. He will bump your grade if your performance improves in the later stage of the class"
+},
+{
+    name: "Alisa Young",
+    rating: "3",
+    numberOfRatings: "4",
+    difficultyLevel: "4.8",
+    takeAgainPercentage: "50%",
+    mostRecentReview: "Provides an electronic version of txtbook. That was helpful. Labs are ok. This class has lots of homework. You must do it on Mastering Physics."
+},
+{
+    name: "Nicholas Licata",
+    rating: "3.1",
+    numberOfRatings: "34",
+    difficultyLevel: "4",
+    takeAgainPercentage: "53%",
+    mostRecentReview: "This class is hard, as is any physics class. However, he curves a lot on the exams to make up for it. He gives a lot of good preparation materials for the exams. Sometimes his lectures are boring or all over the place, though. Occasionally, he will do a problem in a lecture that he cannot solve."
+},
+{
+    name: "Abbas Al Haj Ahmad",
+    rating: "5",
+    numberOfRatings: "34",
+    difficultyLevel: "2.4",
+    takeAgainPercentage: "98%",
+    mostRecentReview: "Took him for ATMS 131 (Weather and Climate) online and must say he is awesome! He is readily available if needed by email or text. Had everything opened up so one can work at your own pace."
+},
+{
+    name: "Jin Wang",
+    rating: "2.6",
+    numberOfRatings: "42",
+    difficultyLevel: "4.4",
+    takeAgainPercentage: "43%",
+    mostRecentReview: "She is not available outside of class, and she talks you down if you have questions during it. Lectures consist of reading the book alone or having another student teach you while she grades papers or plays on her phone. Homework is consistently graded very low and expectations are always unclear. Beware, you are on your own with this prof."
+},
+{
+    name: "Reem Abou-Samra",
+    rating: "4.3",
+    numberOfRatings: "41",
+    difficultyLevel: "2.4",
+    takeAgainPercentage: "67%",
+    mostRecentReview: "This class is easy you have a discussion post every week you have 2 paper in this class, on major one which is your final exam grade, the other assignments relate to your final paper I wouldn't take this class if you have major classes, because the course work is annoying and takes a while to do You must put in the time for this class. Good Luck"
+},
+{
+    name: "Michelle Leonard",
+    rating: "4.1",
+    numberOfRatings: "27",
+    difficultyLevel: "2.7",
+    takeAgainPercentage: "70%",
+    mostRecentReview: "The class is fine, love the subject but Professor Leonard will never grade papers or assignments fairly. She has this complex that she's better than everyone else. No one has ever gotten full points on assignments or papers because she will look to take points away regardless if your work is flawless. She's very unreasonable."
+},
+{
+    name: "Susana Pecina",
+    rating: "4.5",
+    numberOfRatings: "21",
+    difficultyLevel: "2.6",
+    takeAgainPercentage: "82%",
+    mostRecentReview: "I LOVE prof Pecina. She has to be the sweetest professor on the planet. The class had so many useful topics that I learned so much about. There is one exam in the beginning, and then you just get lectures and an essay to write each week. It is A LOT of writing, but if you really think about the concepts in a deep way the words will just flow."
+},
+{
+    name: "Tobin  Dykstra",
+    rating: "5",
+    numberOfRatings: "2",
+    difficultyLevel: "1",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "1 quiz + 1 discussion per week, and exams are open note (no surprise assignments). Everything you need to know for the exams is in the lecture/slides. I wish Dr. Tobin taught more classes, I would take every class he teaches!! This class is an easy A and you learn a lot!!! You won't regret taking ANY class with Dr. Tobin."
+},
+{
+    name: "Nancy Wrobel",
+    rating: "4",
+    numberOfRatings: "49",
+    difficultyLevel: "2.8",
+    takeAgainPercentage: "73%",
+    mostRecentReview: "Difficult class, lots of work and it took so long to study for exams because they were difficult, 2 assignments and 4 exams. The lectures were a bit bland but we didn't get behind like every other class I have so that was appreciated. READ THE BOOK it helps so much"
+},
+{
+    name: "Vadym Pyrozhenko",
+    rating: "5",
+    numberOfRatings: "2",
+    difficultyLevel: "3",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "I took his class and learned a lot. Do the reading, because you will be discussing the reading with heavy examples during the classes. Lots of group discussion. If you do the readings, study the PowerPoints, and take notes, you will do well. He is very responsive, its easy to listen to his lectures and class is interesting. Definitely recommend!"
+},
+{
+    name: "Kevin Early",
+    rating: "3.1",
+    numberOfRatings: "103",
+    difficultyLevel: "3.9",
+    takeAgainPercentage: "34%",
+    mostRecentReview: "Terrible professor DO NOT TAKE HIM"
+},
+{
+    name: "Paul Draus",
+    rating: "3.1",
+    numberOfRatings: "43",
+    difficultyLevel: "3.1",
+    takeAgainPercentage: "27%",
+    mostRecentReview: "DO NOT TAKE!! SAVE YOURSELF. i was doing great in all my classes but failed his my first semester of college. it messed up my entire GPA i wish never clicked register."
+},
+{
+    name: "Brian Long",
+    rating: "5",
+    numberOfRatings: "48",
+    difficultyLevel: "2.4",
+    takeAgainPercentage: "100%",
+    mostRecentReview: "Brian is fantastic, very passionate about the language and culture as he and his wife are fluent. I'm forever grateful to him for learning how to use the accent mark in my last name! Now I can teach my dad (fluent in Spanish) verbs, he never learned them due to being removed from school at 8! Highly recommend Brian for Spanish 101 & 102!"
+},
+{
+    name: "Margaret Mikula",
+    rating: "3.8",
+    numberOfRatings: "52",
+    difficultyLevel: "3.4",
+    takeAgainPercentage: "69%",
+    mostRecentReview: "She is so smart and nice, but she would act like she was learning this for the first time. She said our class was hybrid but that was an excuse for her to be a subpar teacher. One time in class, she said we should watch her videos on 2x speed because she takes too long to get to the point, I should've dropped the class right then and there."
+},
+  {
+    name: "John Chenoweth",
+    rating: "3.7",
+    numberOfRatings: "55",
+    difficultyLevel: "3.2",
+    takeAgainPercentage: "70%",
+    mostRecentReview: "For a 101 course, the workload is extremely heavy. Be ready to devote hours a week for one module. He is a very harsh grader but truly passionate about what he teaches. My 400-level classes had less reading than this course. The modules are dense with lots of info so reach out if you are struggling",
+  },
+  {
     name: "Raymond Duda",
     rating: "1.9",
     numberOfRatings: "57",
@@ -71,7 +1119,7 @@ const rmpDatabase = [
     mostRecentReview: "Awesome sauce!",
   },
   {
-    name: "Pk Mallick",
+    name: "Pankaj Mallick",
     rating: "3.4",
     numberOfRatings: "13",
     difficultyLevel: "3.4",
@@ -365,7 +1413,7 @@ const rmpDatabase = [
       "Incredibly passionate, funny, and relatable. His lectures are honestly the highlight of my week. Very caring and understanding as long as you communicate. Don't actually know if attendance is mandatory, but he takes roll every class. Absolutely take him if linguistics/English is something you're interested in.",
   },
   {
-    name: "Chris Burke",
+    name: "Christopher Burke",
     rating: "2.3",
     numberOfRatings: "55",
     difficultyLevel: "3.3",
@@ -832,7 +1880,7 @@ const rmpDatabase = [
       "Profesora Sukunda was my favorite teacher at U of M Dearborn, and I had a lot of very helpful and knowledgeable instructors.  She is a great teacher.  She is clear, concise, and you know what is expected of you.  I found myself working harder than I might have because I wanted her approval. She really brings the best out of her students! Wonderful!",
   },
   {
-    name: "Gabriella Eschrich",
+    name: "Gabriella Scarlatta",
     rating: "3.9",
     numberOfRatings: "31",
     difficultyLevel: "2.6",
@@ -1720,7 +2768,7 @@ const rmpDatabase = [
       "Makes many mistakes during lectures, rarely goes back to correct them. All the points are in the exams, which are difficult. Would not recommend for Masters students.",
   },
   {
-    name: "German Reyes",
+    name: "German Reyes-Villanueva",
     rating: "3.4",
     numberOfRatings: "12",
     difficultyLevel: "3.5",
@@ -2102,7 +3150,7 @@ const rmpDatabase = [
       "This professor is really something else. Her lectures barley cover the material, so make sure you read! She doesn't curve, round or give partial credit. She also refuses to teach how to do some of the math problems.",
   },
   {
-    name: "Kirsten Dara Hill",
+    name: "Kirsten Hill",
     rating: "3.1",
     numberOfRatings: "20",
     difficultyLevel: "3.6",
@@ -3564,7 +4612,7 @@ const rmpDatabase = [
       "Really nice professor and very easy class. 3 exams, just study and you will be fine. He gives great study guides and practice tests for it. His grading scale is very generous (87% is an A). His lectures are very boring, i found it very hard to pay attention. Other than that great class and great professor.",
   },
   {
-    name: "Shazia Khan",
+    name: "S. Khan",
     rating: "4.8",
     numberOfRatings: "2",
     difficultyLevel: "2",
@@ -4534,7 +5582,7 @@ const rmpDatabase = [
       "He really never taught anything, as everything is on McGraw hill. Study assignments on McGraw hill are for participation points if you dont attend lecture. 2 assignments that are very hard but short which oddly tank your grade. You can get As on your exams, and still get a B in the class bc of the assignments. Just a very weird grading scale.",
   },
   {
-    name: "Robert Ridgeway",
+    name: "Robert Ridgway",
     rating: "3.8",
     numberOfRatings: "5",
     difficultyLevel: "2.4",
@@ -4838,7 +5886,7 @@ const rmpDatabase = [
     mostRecentReview: "He's awesome",
   },
   {
-    name: 'Zhixin "Jason" Liu',
+    name: "Jason Liu",
     rating: "3.4",
     numberOfRatings: "9",
     difficultyLevel: "3.4",
@@ -4873,7 +5921,7 @@ const rmpDatabase = [
       "Weekly assignments; half via Canvas and the other half written. Tests are very easy and are right off his PPT slides. He is slow to respond to emails but other than that he's great. Class is an easy A if you pay attention.",
   },
   {
-    name: "Jeff Igo",
+    name: "Jeffrey Igo",
     rating: "3.9",
     numberOfRatings: "113",
     difficultyLevel: "3.8",
@@ -4990,7 +6038,7 @@ const rmpDatabase = [
       "Doesn't do a good job teaching the material. I went into this class having no knowledge in coding and I left with some basics but it was hard to learn with him. I needed help from other people to actually understand the material. I heard he's good with teaching other topics but coding is not his best. He seems too smart to teach intro-level classes",
   },
   {
-    name: "Chris Klein",
+    name: "Christian Klein",
     rating: "4.3",
     numberOfRatings: "43",
     difficultyLevel: "3.3",
@@ -5008,7 +6056,7 @@ const rmpDatabase = [
       "The class is difficult compared to others, but it is laid out well. Midterm and Final are short answers and there's no study guide so you have to study every module. DO NOT fall behind in the weekly modules or you won't be able to catch up. If you have questions or need help Dr. Miranda was very nice and quick to respond to me.",
   },
   {
-    name: "Joe Musial",
+    name: "Joseph Musial III",
     rating: "4.3",
     numberOfRatings: "30",
     difficultyLevel: "2.4",
@@ -5061,7 +6109,7 @@ const rmpDatabase = [
       "John Artis is a kind man who just wants to share his knowledge and experience with other students. He's a stickler for participation and discussions. If you come in and simply share your thoughts on whatever he is discussing you should be fine. Papers are simple, grading criteria is clear, grading is generous. A good resource for future references.",
   },
   {
-    name: "Jeffrey Bouwman",
+    name: "Jeff Bouwman",
     rating: "5",
     numberOfRatings: "27",
     difficultyLevel: "2.5",
@@ -5106,7 +6154,7 @@ const rmpDatabase = [
       "Professor Kent does a great job teaching the course. He really does a great job breaking down the material so students can understand it. He uses helpful examples too. Tests are manageable if you come to class and participate and pay attention. He truly wants students to succeed and does everything in his power to help!",
   },
   {
-    name: "Emily Luxon",
+    name: "Emily Matthews Luxon",
     rating: "4.6",
     numberOfRatings: "31",
     difficultyLevel: "3",
@@ -5115,7 +6163,7 @@ const rmpDatabase = [
       "If you ever get a chance, TAKE HER!! Best prof at UMD and deserves a raise because of how caring she is (we used clip notes every week to vent out our thoughts and feelings)!! Her assignments and discussions were easy!.",
   },
   {
-    name: "Grace Kotre",
+    name: "Grace Helms Kotre",
     rating: "5",
     numberOfRatings: "6",
     difficultyLevel: "2",
@@ -5489,7 +6537,7 @@ const rmpDatabase = [
       "Dr. Killu displayed competence, although my recollection of the specific course content is somewhat limited. Nevertheless, the course's unique setup proved to be remarkably engaging, as it emphasized practical application. This approach not only fostered an enjoyable learning experience but also honed my public speaking skills significantly.",
   },
   {
-    name: "Xiang Weidong",
+    name: "Weidong Xiang",
     rating: "2.2",
     numberOfRatings: "17",
     difficultyLevel: "2.2",
@@ -5687,7 +6735,7 @@ const rmpDatabase = [
       "Professor Koumpias is an amazing professor. He is super caring and truly wants you to succeed. There was quite a bit of homework and his lectures were pretty dense but it was very doable. Would definitely take him again!",
   },
   {
-    name: "Tim Kiska",
+    name: "Timothy Kiska",
     rating: "4.8",
     numberOfRatings: "31",
     difficultyLevel: "1.6",
@@ -5749,7 +6797,7 @@ const rmpDatabase = [
       "She's very good at explaining the material. Quizzes/test problems are just like the textbook problems. Doesn't take attendance (but does give extra credit based off attendance sometimes), doesn't require the textbook (just helpful to have for practice problems). Will definitely take her again given the chance.",
   },
   {
-    name: "Kim Doohyun",
+    name: "Doohyun Kim",
     rating: "N/A",
     numberOfRatings: "",
     difficultyLevel: "N/A",
@@ -5775,7 +6823,7 @@ const rmpDatabase = [
       "I have had this professor 3 times for different classes. He is very understanding and excepts late work with no question. His criteria is clear, and you can tell he cares about his students. His in person classes are mandatory as he has pop up assignments, but if you play your cards right you will have good timing and can tell when they will be.",
   },
   {
-    name: "Nicholas Nalepa",
+    name: "Nick Nalepa",
     rating: "4.9",
     numberOfRatings: "16",
     difficultyLevel: "2.3",
@@ -5909,7 +6957,7 @@ const rmpDatabase = [
       "Spent too much time trying to manage my case group. Class is all about cases and there are graded case reports and presentations. The course material is never mentioned in class, it's just up to you to read the book and show up on test day ready to be tested. Seemed fair but just not how I like to learn. Do not recommend.",
   },
   {
-    name: "Nesrin Cengiz",
+    name: "Nesrin Cengiz Phillips",
     rating: "3.7",
     numberOfRatings: "30",
     difficultyLevel: "3.4",
@@ -5927,7 +6975,7 @@ const rmpDatabase = [
       "Professor Paul Muench is a real gem. Teaching is really awesome, Hardworking. Gives a lot of examples and make algorithm clear. Fun to learn data mining with professor. Must take course with this professor.",
   },
   {
-    name: "Sonia Tiquia",
+    name: "Sonia Tiquia-Arashiro",
     rating: "2.5",
     numberOfRatings: "42",
     difficultyLevel: "4.4",
@@ -5962,7 +7010,7 @@ const rmpDatabase = [
       "Professor Klein was a great professor to have for ISM 575. Despite being a summer 2 course, professor Klein made it easy by having a clear grading criteria, clear instructions, and numerous assignments to do well in the class. Most of all, she was fair in her grading and knew how to respond efficiently to questions or comments. Good professor",
   },
   {
-    name: "Katherine Lacommare",
+    name: "Katherine La commare",
     rating: "3.9",
     numberOfRatings: "55",
     difficultyLevel: "3.8",
@@ -6024,7 +7072,7 @@ const rmpDatabase = [
       "AMAZING PROFESSOR! He gives great feedback that helps you improve for his papers and if you show up and take notes and read the book, you're ready to go. He is funny and really cares about his students success. I am taking him again in the fall!",
   },
   {
-    name: "Carlos Rodriguez",
+    name: "Carlos Rodriguez-McGill",
     rating: "3.9",
     numberOfRatings: "46",
     difficultyLevel: "2.9",
@@ -6103,7 +7151,7 @@ const rmpDatabase = [
       "professor nisar is amazing in teaching one of the best professor at UM-Dearborn",
   },
   {
-    name: "Xiaohua Shannon Li",
+    name: "Xiaohua Li",
     rating: "3.9",
     numberOfRatings: "34",
     difficultyLevel: "4.3",
@@ -6380,7 +7428,7 @@ const rmpDatabase = [
       "The course is fairly simple. Aside from his explanations of the labs, his teachings did not help at all. So just focus on the lab explanations and master them as they are basically what you are tested on.",
   },
   {
-    name: "Maggie Rathouz",
+    name: "Margaret Rathouz",
     rating: "4.3",
     numberOfRatings: "20",
     difficultyLevel: "3",
@@ -6407,7 +7455,7 @@ const rmpDatabase = [
       "Professor wills to help but overloaded homework's, due on Wednesdays and Sundays. You need to study for this class almost 6-8 hours a week. Couldn't complete the class with my other 3 courses. It took all my time.",
   },
   {
-    name: "Francia Martinez-Valencia",
+    name: "Francia Martinez Valencia",
     rating: "4.9",
     numberOfRatings: "34",
     difficultyLevel: "2",
@@ -6416,7 +7464,7 @@ const rmpDatabase = [
       "Highly recommend her if you have to take Spanish. Clear grading criteria, and everything you need is supplied to you online. No textbook was required for this class. Very easy.",
   },
   {
-    name: "Thilini Kondashinghe",
+    name: "Thilini Kondasinghe",
     rating: "4.3",
     numberOfRatings: "21",
     difficultyLevel: "4",
@@ -6550,7 +7598,7 @@ const rmpDatabase = [
       "Professor Goodman is the type of professor that goes all out for her students. Very sweet and explains really well. A tough grader but she makes it clear what she wants in the rubric. GO TO HER OFFICE HOURS! She explains really well and gives examples of what she expects. It helped boost my grade and it went from a B+ to an A",
   },
   {
-    name: "Robert Warren Anderson",
+    name: "Robert Anderson",
     rating: "4",
     numberOfRatings: "34",
     difficultyLevel: "3.3",
@@ -6630,7 +7678,7 @@ const rmpDatabase = [
       "Dr. Janakiraman is a great professor! Her lectures were well organized and engaging with easy to follow slides. You need to work hard to get a good grade, and she lays out all the resources you need to do well. She welcomes questions! Her exams and quizzes were based on lectures. She is a caring professor and made the course engaging!",
   },
   {
-    name: "Ben Wielechowski",
+    name: "Benjamin Wielechowski",
     rating: "5",
     numberOfRatings: "18",
     difficultyLevel: "2.4",
@@ -6737,7 +7785,7 @@ const rmpDatabase = [
     mostRecentReview: "straight g",
   },
   {
-    name: "Ya Yi",
+    name: "Ya Sha Yi",
     rating: "2.5",
     numberOfRatings: "7",
     difficultyLevel: "3.6",
@@ -6764,7 +7812,7 @@ const rmpDatabase = [
       "the greatest teacher I have ever had in my life, given my non-accounting background, I was especially amazed at how fascinating and absorbing I found his classes and teaching, enroll in his courses now, can not recommend him enough!",
   },
   {
-    name: "Dan Rigato",
+    name: "Daniel Rigato",
     rating: "4.3",
     numberOfRatings: "14",
     difficultyLevel: "2.9",
@@ -6883,7 +7931,7 @@ const rmpDatabase = [
       "She is very intelligent and cares about her students, knows her stuff and is helpful if you have questions.",
   },
   {
-    name: "Yoon Junghee",
+    name: "Junghee Yoon",
     rating: "3.8",
     numberOfRatings: "9",
     difficultyLevel: "2.1",
@@ -7063,7 +8111,7 @@ const rmpDatabase = [
       "Just don't, If  you go to U of M you know these type of teachers, ahh the entire class did bad, must be not my probleem and all these students are just complacent.- this is a standard clac class should not be this difficult, Im almost approaching senior year and will be retaking this class, all my other classes A and B, 20 percent of grade everyexm",
   },
   {
-    name: "Hugo Casquero",
+    name: "Hugo Casquero Penelas",
     rating: "5",
     numberOfRatings: "1",
     difficultyLevel: "3",
@@ -7143,7 +8191,7 @@ const rmpDatabase = [
       "GO TO CLASS, there is absolutely no way for you to get a good grade by skipping any classes. Her lectures are very straightforward but we got so behind so just manage your time well and study.",
   },
   {
-    name: "Ben Phillips",
+    name: "Benjamin Phillips",
     rating: "3.6",
     numberOfRatings: "64",
     difficultyLevel: "4",
@@ -7681,7 +8729,7 @@ const rmpDatabase = [
       "Most of the class is him lecturing. The assignments are few and far between, and he's very willing to help if you reach out to him. Class is an easy A if you put in some effort, he's very understanding of late work and helpful too. Overall a nice professor to have.",
   },
   {
-    name: "Jirjees  Matti",
+    name: "Jirjees Matti",
     rating: "5",
     numberOfRatings: "5",
     difficultyLevel: "2.1",
@@ -7885,7 +8933,7 @@ const rmpDatabase = [
     mostRecentReview: "",
   },
   {
-    name: "Shelly Jeranski",
+    name: "Shelly Jarenski",
     rating: "N/A",
     numberOfRatings: "",
     difficultyLevel: "N/A",
@@ -7911,7 +8959,7 @@ const rmpDatabase = [
       "Mr. Morrow is by far one of the best Professors I have ever taken. From leniency in regard to homework assignments to allocating an abundant amount of time to office hours.  For me at least he explain the course in a clear manner, although at times it was unstructured.  I wish he had stayed at U of M for more time to take more of his classes.",
   },
   {
-    name: "Pauline Vinson",
+    name: "Pauline Homsi Vinson",
     rating: "1",
     numberOfRatings: "1",
     difficultyLevel: "5",
@@ -7972,7 +9020,7 @@ const rmpDatabase = [
       "He did a nice job in the lectures and made difficult topics easy to understand. He is clear with his communication and fair in grading. Very respectful and supportive to students.",
   },
   {
-    name: "Pamela McAuslan",
+    name: "Pam McAuslan",
     rating: "4",
     numberOfRatings: "55",
     difficultyLevel: "3",
@@ -7999,7 +9047,7 @@ const rmpDatabase = [
       "This professor will give you the worst exams you have ever taken, and make it worth 40% of your grade. The whole class will be a breeze until you take those two exams, which my class averaged 65% with no curves. She is also condescending; she does not like answering the same question twice.",
   },
   {
-    name: "Kelly Ann Jabbusch",
+    name: "Kelly Jabbusch",
     rating: "3.8",
     numberOfRatings: "73",
     difficultyLevel: "3.1",

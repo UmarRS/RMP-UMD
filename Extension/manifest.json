@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Rate My Professor Extension Prototype",
+    "name": "M-Rate for UM-Dearborn",
     "version": "1.0",
-    "description": "Append an icon next to the professor's name, which pops up a tab with their rate my professor info",
+    "description": "A rate my professor web extension for integration within the University of Michigan - Dearborn's proprietary scheduling website. Click on the UM logo next to a professors name to see their RMP info",
     "permissions": ["scripting"],
     "host_permissions": [
       "https://apps-banner-xe6-prod.its.umd.umich.edu:7005/StudentRegistrationSsb/ssb/*"
@@ -26,7 +26,7 @@
       "default_popup": "popup.html"
     },
     "icons": {
-      "16": "Icons/um16xtest.png",
+      "16": "Icons/um16x.png",
       "48": "Icons/um48x.png",
       "128": "Icons/um128x.png"
     }
