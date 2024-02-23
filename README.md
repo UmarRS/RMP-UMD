@@ -29,5 +29,3 @@ Step 6: Click on the UM logo next to a professors name to see their RMP info
 Be Amazed!:
 
 ![Alt text](<README Screenshots/Screenshot 2024-02-20 at 10.20.37 AM.png>)
-
-For any concerns or suggestions please email: m-rate@googlegroups.com
