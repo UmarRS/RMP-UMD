@@ -2,8 +2,7 @@
     "manifest_version": 3,
     "name": "M-Rate for UM-Dearborn",
     "version": "1.0",
-    "description": "A rate my professor web extension for integration within the University of Michigan - Dearborn's proprietary scheduling website. Click on the UM logo next to a professors name to see their RMP info",
-    "permissions": ["scripting"],
+    "description": "A rate my professor web extension for integration within the University of Michigan - Dearborn's proprietary scheduling website.",
     "host_permissions": [
       "https://apps-banner-xe6-prod.its.umd.umich.edu:7005/StudentRegistrationSsb/ssb/*"
     ],
