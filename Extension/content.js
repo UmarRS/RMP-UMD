@@ -14,7 +14,7 @@ function insertRateMyProfessorIcon() {
   instructorElements.forEach((element) => {
     if (!element.classList.contains("rmp-icon-added")) {
       const iconElement = document.createElement("img");
-      const iconPath = chrome.runtime.getURL("Icons/um16x.png");
+      const iconPath = chrome.runtime.getURL("Icons/um16xtest.png");
       iconElement.setAttribute("src", iconPath);
       iconElement.setAttribute("style", "cursor:pointer; margin-right:5px;");
       iconElement.classList.add("rmp-icon");
